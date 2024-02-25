@@ -109,7 +109,6 @@ textarea:active {
   outline: none;
 }
 
-img:not([draggable]),
 embed,
 object,
 video {
@@ -1223,6 +1222,9 @@ button[class*=-primary]:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.service_item .item_icon_aux img {
+  width: 47%;
 }
 .service_item .item_title {
   font-size: 24px;
