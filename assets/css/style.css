@@ -272,10 +272,6 @@ mark {
   z-index: 1;
   position: relative;
 }
-.decoration_wrapper .decoration_item {
-  z-index: -1;
-  position: absolute;
-}
 
 @-webkit-keyframes phoneRinging {
   from {
@@ -2195,11 +2191,5 @@ button[class*=-primary]:hover {
   }
   .page_banner [class*=shape_leaf] {
     max-width: 100px;
-  }
-  .page_banner .decoration_item.shape_leaf_1 {
-    left: -20px;
-  }
-  .page_banner .decoration_item.shape_leaf_2 {
-    right: -20px;
   }
 }
