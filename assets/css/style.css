@@ -1,33 +1,32 @@
 @charset "UTF-8";
 /*
 1 - Template Elements
-* - 1.01 - Template Colors
-* - 1.02 - Template CSS Animations
+* - 1.01 - Colors
+* - 1.02 - CSS Animations
 * - 1.03 - Backtotop Button
-* - 1.04 - Template Gapping or Spacing
-* - 1.05 - Menu bar
-* - 2.06 - Buttons
-* - 2.07 - Typography
-* - 2.10 - Image
-* - 2.11 - Form
-* - 2.12 - Video
-* - 2.13 - Social Icons
-* - 2.17 - Pagination Nav
+* - 1.04 - Gapping or Spacing
+* - 1.05 - Menu bar (unordered lists)
+* - 1.06 - Buttons
+* - 1.07 - Typography
+* - 1.08 - Images
+* - 1.09 - Videos
+* - 1.10 - Social Icons
+* - 1.11 - Pagination Nav
 
-3 - Template Parts
-* - 3.01 - Site Header
-* - 3.02 - Site Footer
-* - 3.03 - Page Header
-* - 3.04 - Sidebar
+2 - Template Parts
+* - 2.01 - Site Header
+* - 2.02 - Site Footer
+* - 2.03 - Page Header
+* - 2.04 - Sidebar
 
-4 - Template Components
-* - 4.01 - Page Hero Section
-* - 4.02 - Service
+3 - Template Components
+* - 3.01 - Page Hero Section
+* - 3.02 - Service
 
-5 - Template Pages
-* - 5.01 - About Page
-* - 5.02 - All Details Pages
-* - 5.03 - Contact Page
+4 - Template Pages
+* - 4.01 - About Page
+* - 4.02 - All Details Pages
+* - 4.03 - Contact Page
 
 */
 
@@ -246,8 +245,8 @@ mark {
   display: block;
 }
 
-/* 1.01 - Template Colors
-========================= */
+/* 1.01 - Colors
+================ */
 .bg_primary {
   background-color: var(--bs-primary);
 }
@@ -267,8 +266,8 @@ mark {
   background-color: var(--bs-secondary-bg-subtle);
 }
 
-/* 1.02 - Template CSS Animations
-================================== */
+/* 1.02 - CSS Animations
+======================== */
 .decoration_wrapper {
   z-index: 1;
   position: relative;
@@ -356,8 +355,8 @@ mark {
           animation: spin 5000ms infinite linear;
 }
 
-/* 1.03 - Backtotop Button - Start
-================================================== */
+/* 1.03 - Backtotop Button
+========================== */
 .backtotop {
   right: 15px;
   z-index: 999;
@@ -389,8 +388,8 @@ mark {
           animation: bttIconMover 1s infinite alternate;
 }
 
-/* 1.04 - Template Gapping or Spacing
-===================================== */
+/* 1.04 - Gapping or Spacing
+============================ */
 .section_space_lg {
   padding-top: 150px;
   padding-bottom: 160px;
@@ -440,8 +439,8 @@ mark {
   display: block;
 }
 
-/* 2.06 - Buttons - Start
-================================================== */
+/* 1.06 - Buttons
+================= */
 .btn_wrap {
   padding: 50px 0;
 }
@@ -532,24 +531,6 @@ button[class*=-primary]:hover {
           box-shadow: 0px 10px 40px 0px rgba(43, 171, 160, 0.2);
 }
 
-.btn-dark {
-  --bs-btn-hover-bg: var(--bs-dark);
-  --bs-btn-hover-border-color: var(--bs-dark);
-  --bs-btn-active-bg: var(--bs-dark);
-  --bs-btn-active-border-color: var(--bs-dark);
-}
-
-a[class*=-dark],
-button[class*=-dark] {
-  -webkit-box-shadow: 0px 10px 40px 0px rgba(41, 48, 57, 0.06);
-          box-shadow: 0px 10px 40px 0px rgba(41, 48, 57, 0.06);
-}
-a[class*=-dark]:hover,
-button[class*=-dark]:hover {
-  -webkit-box-shadow: 0px 10px 40px 0px rgba(41, 48, 57, 0.2);
-          box-shadow: 0px 10px 40px 0px rgba(41, 48, 57, 0.2);
-}
-
 .btn-link {
   padding: 0;
   line-height: 1;
@@ -611,91 +592,6 @@ button[class*=-dark]:hover {
           transform: translateX(4px);
 }
 
-.btn_reply {
-  line-height: 1;
-  font-size: 16px;
-  font-weight: 600;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-decoration: none;
-  color: var(--bs-body-color);
-}
-.btn_reply .btn_icon {
-  width: 28px;
-  height: 28px;
-  font-size: 15px;
-  margin-right: 4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: var(--bs-primary);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: var(--bs-transition);
-  transition: var(--bs-transition);
-  border-radius: var(--bs-border-radius-pill);
-}
-.btn_reply:hover {
-  color: var(--bs-primary);
-}
-.btn_reply:hover .btn_icon {
-  color: var(--bs-white);
-  background-color: var(--bs-primary);
-}
-
-.btn_hotline {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: var(--bs-dark);
-}
-.btn_hotline .btn_icon {
-  width: 36px;
-  height: 36px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 36px;
-          flex: 0 0 36px;
-  font-size: 16px;
-  margin-right: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: var(--bs-white);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--bs-primary);
-  border-radius: var(--bs-border-radius-pill);
-  -webkit-transition: var(--bs-transition);
-  transition: var(--bs-transition);
-}
-.btn_hotline .btn_icon i {
-  -webkit-animation: phoneRinging 1.5s infinite linear;
-          animation: phoneRinging 1.5s infinite linear;
-}
-.btn_hotline .btn_text {
-  font-size: 16px;
-  font-weight: 700;
-}
-.btn_hotline:hover {
-  color: var(--bs-primary);
-}
-
 .video_play_btn {
   width: 150px;
   height: 150px;
@@ -725,10 +621,8 @@ button[class*=-dark]:hover {
   text-shadow: 8px 8px 30px rgba(247, 171, 30, 0.6);
 }
 
-/* 2.06 - Buttons - End
-================================================== */
-/* 2.07 - Typography - Start
-================================================== */
+/* 1.07 - Typography
+==================== */
 .section_heading {
   margin-bottom: 40px;
 }
@@ -747,11 +641,8 @@ button[class*=-dark]:hover {
   max-width: 500px;
 }
 
-/* 2.07 - Typography - End
-================================================== */
-
-/* 2.10 - Image - Start
-================================================== */
+/* 1.08 - Images
+================ */
 .popup_image {
   display: block;
 }
@@ -863,179 +754,8 @@ button[class*=-dark]:hover {
   max-width: 200px;
 }
 
-/* 2.10 - Image - End
-================================================== */
-/* 2.11 - Form - Start
-================================================== */
-.form-group {
-  position: relative;
-}
-.form-group:not(:last-child) {
-  margin-bottom: 30px;
-}
-.form-group label {
-  display: block;
-  line-height: 1;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 0 0 10px 20px;
-  font-family: var(--bs-font-heading);
-}
-.form-group .input_icon {
-  top: 13px;
-  right: 20px;
-  font-size: 20px;
-  position: absolute;
-  color: var(--bs-primary);
-}
-.form-group .form-control,
-.form-group .form-select {
-  padding: 0 20px;
-  font-size: 16px;
-  border-radius: 27px;
-  color: var(--bs-dark);
-  caret-color: var(--bs-primary);
-  background-color: var(--bs-white);
-  line-height: var(--bs-body-line-height);
-  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
-}
-.form-group .form-control:hover, .form-group .form-control:focus,
-.form-group .form-select:hover,
-.form-group .form-select:focus {
-  border-color: var(--bs-primary);
-}
-.form-group .form-control:focus,
-.form-group .form-select:focus {
-  -webkit-box-shadow: 0 0 0 6px rgba(43, 171, 160, 0.2);
-          box-shadow: 0 0 0 6px rgba(43, 171, 160, 0.2);
-}
-.form-group .form-control::-webkit-input-placeholder, .form-group .form-select::-webkit-input-placeholder {
-  color: #8C8F92;
-}
-.form-group .form-control::-moz-placeholder, .form-group .form-select::-moz-placeholder {
-  color: #8C8F92;
-}
-.form-group .form-control:-ms-input-placeholder, .form-group .form-select:-ms-input-placeholder {
-  color: #8C8F92;
-}
-.form-group .form-control::-ms-input-placeholder, .form-group .form-select::-ms-input-placeholder {
-  color: #8C8F92;
-}
-.form-group .form-control::placeholder,
-.form-group .form-select::placeholder {
-  color: #8C8F92;
-}
-.form-group .form-control:-ms-input-placeholder,
-.form-group .form-select:-ms-input-placeholder {
-  color: #8C8F92;
-}
-.form-group .form-control::-ms-input-placeholder,
-.form-group .form-select::-ms-input-placeholder {
-  color: #8C8F92;
-}
-.form-group input.form-control,
-.form-group select.form-select {
-  height: 54px;
-}
-.form-group textarea.form-control {
-  min-height: 190px;
-  padding: 15px 20px 20px;
-}
-.form-group .form-select {
-  color: #8C8F92;
-}
-
-.form-check {
-  padding: 0;
-  min-height: auto;
-  margin-bottom: 30px;
-}
-.form-check input {
-  float: left;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: relative;
-  margin: 2px 10px 0 0;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  border: 1px solid var(--bs-border-color);
-}
-.form-check input:before {
-  opacity: 0;
-  content: "";
-  line-height: 1;
-  font-weight: 900;
-  position: absolute;
-  font-family: "Font Awesome 5 Pro";
-}
-.form-check input:checked {
-  border-color: var(--bs-primary);
-  -webkit-box-shadow: 0 0 0 4px rgba(43, 171, 160, 0.2);
-          box-shadow: 0 0 0 4px rgba(43, 171, 160, 0.2);
-}
-.form-check input:checked:before {
-  opacity: 1;
-}
-.form-check input[type=radio] {
-  border-radius: var(--bs-border-radius-pill);
-}
-.form-check input[type=radio]:before {
-  top: 2px;
-  left: 2px;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: var(--bs-primary);
-}
-.form-check input[type=checkbox] {
-  border-radius: 5px;
-}
-.form-check input[type=checkbox]:before {
-  top: 2px;
-  left: 3px;
-  font-size: 10px;
-  content: "\f00c";
-  color: var(--bs-white);
-}
-.form-check input[type=checkbox]:checked {
-  background-color: var(--bs-primary);
-}
-.form-check label {
-  margin: 0;
-  display: table;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.form-check-input:checked {
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
-  -webkit-box-shadow: 0 0 0 4px rgba(43, 171, 160, 0.2);
-          box-shadow: 0 0 0 4px rgba(43, 171, 160, 0.2);
-}
-
-.form-check-input:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-color: var(--bs-primary);
-}
-
-.gmap_canvas iframe {
-  width: 100%;
-  height: 790px;
-  display: block;
-}
-
-/* 2.11 - Form - End
-================================================== */
-/* 2.12 - Video - Start
-================================================== */
+/* 1.09 - Videos
+================ */
 .mfp-iframe-holder .mfp-content {
   width: 100%;
   line-height: 0;
@@ -1067,10 +787,8 @@ button[class*=-dark]:hover {
   background-color: rgba(13, 13, 13, 0.2);
 }
 
-/* 2.12 - Video - End
-================================================== */
-/* 2.13 - Social Icons - Start
-================================================== */
+/* 1.10 - Social Icons
+====================== */
 .social_title {
   line-height: 1;
   font-size: 20px;
@@ -1133,8 +851,8 @@ button[class*=-dark]:hover {
   border-color: var(--bs-primary);
 }
 
-/* 2.17 - Pagination Nav - Start
-================================================== */
+/* 1.11 - Pagination Nav
+======================== */
 .pagination_wrap {
   padding-top: 50px;
 }
@@ -1163,8 +881,8 @@ button[class*=-dark]:hover {
   background-color: var(--bs-primary);
 }
 
-/* 3.01 - Site Header - Start
-================================================== */
+/* 2.01 - Site Header
+===================== */
 .site_header {
   top: 0;
   left: 0;
@@ -1303,8 +1021,8 @@ button[class*=-dark]:hover {
   display: none;
 }
 
-/* 3.02 - Site Footer - Start
-================================================== */
+/* 2.02 - Site Footer
+===================== */
 .site_footer .info_list {
   margin: -6px -15px;
 }
@@ -1344,8 +1062,8 @@ button[class*=-dark]:hover {
   color: var(--bs-white);
 }
 
-/* 3.03 - Page Header
-================================================== */
+/* 2.03 - Page Header
+===================== */
 
 .site_header + main > .page_banner {
   margin-top: 118px;
@@ -1358,8 +1076,8 @@ button[class*=-dark]:hover {
   margin-bottom: 30px;
 }
 
-/* 3.04 - Sidebar - Start
-================================================== */
+/* 2.04 - Sidebar
+================= */
 .sidebar > *:not(:last-child) {
   margin-bottom: 60px;
 }
@@ -1386,8 +1104,8 @@ button[class*=-dark]:hover {
   padding-left: 10px;
 }
 
-/* 4.01 - Page Hero Section - Start
-================================================== */
+/* 3.01 - Page Hero Section
+=========================== */
 
 .hero_section {
   padding: 250px 0 160px;
@@ -1478,8 +1196,8 @@ button[class*=-dark]:hover {
   border-radius: var(--bs-border-radius-xxl);
 }
 
-/* 4.02 - Service - Start
-================================================== */
+/* 3.02 - Service
+================= */
 .service_item {
   padding: 60px 60px 53px;
   -webkit-box-shadow: var(--bs-box-shadow);
@@ -1520,14 +1238,14 @@ button[class*=-dark]:hover {
   margin-bottom: 30px;
 }
 
-/* 5.01 About Page - Start
-================================================== */
+/* 4.01 About Page
+================== */
 .about_content .section_heading .section_heading_description {
   max-width: 540px;
 }
 
-/* 5.02 - All Details Pages - Start
-================================================== */
+/* 4.02 - All Details Pages
+=========================== */
 [class*=_details_section] .details_image {
   overflow: hidden;
   margin-bottom: 30px;
@@ -1671,8 +1389,8 @@ button[class*=-dark]:hover {
   padding: 0 0 10px;
 }
 
-/* 5.03 - Contact Page - Start
-================================================== */
+/* 4.03 - Contact Page
+====================== */
 .contact_info_box {
   padding: 40px;
   overflow: hidden;
@@ -1709,6 +1427,12 @@ button[class*=-dark]:hover {
   transition: var(--bs-transition);
 }
 
+.gmap_canvas iframe {
+  width: 100%;
+  height: 790px;
+  display: block;
+}
+
 .gmap_canvas.contact_map iframe {
   height: 600px;
 }
@@ -1722,8 +1446,8 @@ button[class*=-dark]:hover {
           box-shadow: 0px 8px 30px 0px rgba(43, 171, 160, 0.07);
 }
 
-/* Media Screen 1440px - Start
-================================================== */
+/* Media Screen 1440px
+====================== */
 @media screen and (max-width: 1440px) {
   :root {
     --bs-body-font-size: 16px;
@@ -1847,8 +1571,8 @@ button[class*=-dark]:hover {
   }
 }
 
-/* Media Screen 1199px - Start
-================================================== */
+/* Media Screen 1199px
+====================== */
 @media screen and (max-width: 1199px) {
   .main_menu_list > li > a {
     font-size: 15px;
@@ -1913,7 +1637,6 @@ button[class*=-dark]:hover {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
-  .error_section [class*=shape_leaf],
   .pricing_section [class*=shape_leaf] {
     max-width: 270px;
   }
@@ -1947,8 +1670,8 @@ button[class*=-dark]:hover {
   }
 }
 
-/* Media Screen 1024px - Start
-================================================== */
+/* Media Screen 1024px
+====================== */
 @media screen and (max-width: 1024px) {
   .images_group_widget {
     padding: 40px;
@@ -2018,8 +1741,8 @@ button[class*=-dark]:hover {
   }
 }
 
-/* Media Screen 991px - Start
-================================================== */
+/* Media Screen 991px
+===================== */
 @media screen and (max-width: 991px) {
   .container {
     max-width: 730px;
@@ -2137,8 +1860,8 @@ button[class*=-dark]:hover {
   }
 }
 
-/* Media Screen 767px - Start
-================================================== */
+/* Media Screen 767px
+===================== */
 @media screen and (max-width: 767px) {
   .section_heading .section_heading_description {
     font-size: 16px;
@@ -2156,8 +1879,8 @@ button[class*=-dark]:hover {
   }
 }
 
-/* Media Screen 680px - Start
-================================================== */
+/* Media Screen 680px
+===================== */
 @media screen and (max-width: 680px) {
   .prev_next_post_nav {
     -webkit-box-orient: vertical;
@@ -2185,8 +1908,8 @@ button[class*=-dark]:hover {
   }
 }
 
-/* Media Screen 575px - Start
-================================================== */
+/* Media Screen 575px
+===================== */
 @media screen and (max-width: 575px) {
   .main_menu {
     top: 68px;
@@ -2262,13 +1985,6 @@ button[class*=-dark]:hover {
   .comment_list_wrap .btn_reply {
     position: static;
   }
-  .error_section h1 {
-    font-size: 200px;
-    margin-bottom: 30px;
-  }
-  .error_section h2 {
-    font-size: 36px;
-  }
   .consultation_form {
     padding: 60px 30px;
   }
@@ -2311,8 +2027,8 @@ button[class*=-dark]:hover {
   }
 }
 
-/* Media Screen 425px - Start
-================================================== */
+/* Media Screen 425px
+===================== */
 @media screen and (max-width: 425px) {
   :root {
     --bs-body-font-size-md: 16px;
@@ -2429,8 +2145,8 @@ button[class*=-dark]:hover {
   }
 }
 
-/* Media Screen 375px - Start
-================================================== */
+/* Media Screen 375px
+===================== */
 @media screen and (max-width: 375px) {
   .site_header .site_logo {
     margin-right: -50px;
@@ -2473,13 +2189,6 @@ button[class*=-dark]:hover {
   .blog_item .item_title {
     font-size: 18px;
     line-height: 24px;
-  }
-  .error_section h1 {
-    font-size: 160px;
-  }
-  .error_section h2 {
-    font-size: 30px;
-    line-height: 44px;
   }
   .page_title {
     font-size: 32px;
