@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /*
-2 - Template Elements
-* - 2.01 - Template Colors
-* - 2.02 - Template CSS Animations
-* - 2.03 - Backtotop Button
-* - 2.04 - Template Gapping or Spacing
-* - 2.05 - Order & Unorder List
+1 - Template Elements
+* - 1.01 - Template Colors
+* - 1.02 - Template CSS Animations
+* - 1.03 - Backtotop Button
+* - 1.04 - Template Gapping or Spacing
+* - 1.05 - Menu bar
 * - 2.06 - Buttons
 * - 2.07 - Typography
 * - 2.10 - Image
@@ -246,8 +246,8 @@ mark {
   display: block;
 }
 
-/* 2.01 - Template Colors - Start
-================================================== */
+/* 1.01 - Template Colors
+========================= */
 .bg_primary {
   background-color: var(--bs-primary);
 }
@@ -267,10 +267,8 @@ mark {
   background-color: var(--bs-secondary-bg-subtle);
 }
 
-/* 2.01 - Template Colors - End
-================================================== */
-/* 2.02 - Template CSS Animations - Start
-================================================== */
+/* 1.02 - Template CSS Animations
+================================== */
 .decoration_wrapper {
   z-index: 1;
   position: relative;
@@ -358,9 +356,7 @@ mark {
           animation: spin 5000ms infinite linear;
 }
 
-/* 2.02 - Template CSS Animations - End
-================================================== */
-/* 2.03 - Backtotop Button - Start
+/* 1.03 - Backtotop Button - Start
 ================================================== */
 .backtotop {
   right: 15px;
@@ -393,10 +389,8 @@ mark {
           animation: bttIconMover 1s infinite alternate;
 }
 
-/* 2.03 - Backtotop Button - End
-================================================== */
-/* 2.04 - Template Gapping or Spacing - Start
-================================================== */
+/* 1.04 - Template Gapping or Spacing
+===================================== */
 .section_space_lg {
   padding-top: 150px;
   padding-bottom: 160px;
@@ -412,10 +406,8 @@ mark {
   padding-bottom: 80px;
 }
 
-/* 2.04 - Template Gapping or Spacing - End
-================================================== */
-/* 2.05 - Order & Unorder List - Start
-================================================== */
+/* 1.05 - Menu bar
+=================== */
 [class*=unordered_list] {
   margin: 0;
   padding: 0;
@@ -448,230 +440,6 @@ mark {
   display: block;
 }
 
-.info_list > li {
-  font-weight: 600;
-  line-height: 21px;
-  font-size: var(--bs-body-font-size);
-}
-.info_list.unordered_list_block > li:not(:last-child) {
-  margin-bottom: 16px;
-}
-.info_list .info_icon {
-  float: left;
-  width: 21px;
-  margin: 0 8px 0 0;
-}
-.info_list .info_icon i {
-  color: var(--bs-secondary);
-}
-.info_list .info_text {
-  display: table;
-}
-.info_list a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: var(--bs-body-color);
-}
-.info_list a:hover {
-  color: var(--bs-primary);
-}
-
-.post_category {
-  margin: -3px;
-}
-.post_category > li {
-  margin: 3px;
-}
-.post_category a {
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18px;
-  padding: 11px 20px;
-  border-radius: 40px;
-  color: var(--bs-white);
-  background-color: var(--bs-secondary);
-}
-.post_category a:hover {
-  background-color: var(--bs-primary);
-}
-
-.post_category_list > li:not(:last-child) {
-  margin-bottom: 16px;
-}
-.post_category_list a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--bs-body-color);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.post_category_list a:hover {
-  color: var(--bs-secondary);
-}
-
-.post_tags {
-  margin: -5px;
-}
-.post_tags > li {
-  margin: 5px;
-}
-.post_tags a {
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18px;
-  padding: 11px 20px;
-  border-radius: 40px;
-  color: var(--bs-body-color);
-  border: 1px solid var(--bs-border-color);
-}
-.post_tags a:hover {
-  color: var(--bs-white);
-  border-color: var(--bs-primary);
-  background-color: var(--bs-primary);
-}
-
-.post_meta > li {
-  font-size: 16px;
-  line-height: 26px;
-  position: relative;
-}
-.post_meta > li:not(:last-child) {
-  margin-right: 15px;
-  padding-right: 14px;
-}
-.post_meta > li:not(:last-child):before {
-  top: 50%;
-  right: 0;
-  width: 1px;
-  content: "";
-  height: 22px;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: var(--bs-border-color);
-}
-.post_meta > li i {
-  color: var(--bs-primary);
-}
-.post_meta > li > a {
-  display: block;
-  color: var(--bs-body-color);
-}
-.post_meta > li > a:hover {
-  color: var(--bs-primary);
-}
-
-.contact_info_list {
-  margin: -15px;
-}
-.contact_info_list > li {
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  word-break: break-all;
-}
-.contact_info_list > li:hover .item_icon:before {
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-}
-.contact_info_list .item_icon {
-  z-index: 1;
-  width: 50px;
-  height: 50px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50px;
-          flex: 0 0 50px;
-  font-size: 20px;
-  position: relative;
-  margin-right: 15px;
-  border-radius: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: var(--bs-white);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--bs-secondary);
-}
-.contact_info_list .item_icon:before {
-  top: 1px;
-  left: 1px;
-  right: 1px;
-  bottom: 1px;
-  z-index: -1;
-  content: "";
-  position: absolute;
-  border-radius: 100%;
-  -webkit-animation: spin 5000ms infinite linear;
-          animation: spin 5000ms infinite linear;
-  border: 1px dashed var(--bs-secondary);
-}
-.contact_info_list .item_title {
-  line-height: 1;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: var(--bs-bodt-color);
-}
-.contact_info_list .item_info {
-  line-height: 1;
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--bs-dark);
-}
-
-.office_hour_list {
-  padding: 53px 60px;
-  border-radius: var(--bs-border-radius-xl);
-}
-.office_hour_list .area_title {
-  font-size: 24px;
-  line-height: 30px;
-  margin-bottom: 28px;
-}
-.office_hour_list ul > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.office_hour_list ul > li:not(:last-child) {
-  margin-bottom: 12px;
-  padding-bottom: 13px;
-  border-bottom: 1px solid #C1E3DE;
-}
-.office_hour_list ul > li span:last-child {
-  font-weight: 700;
-}
-
-/* 2.05 - Order & Unorder List - End
-================================================== */
 /* 2.06 - Buttons - Start
 ================================================== */
 .btn_wrap {
@@ -2715,16 +2483,6 @@ button[class*=-dark]:hover {
   }
   .page_title {
     font-size: 32px;
-  }
-  .breadcrumb_nav > li {
-    font-size: 14px;
-  }
-  .breadcrumb_nav > li:not(:last-child) {
-    padding-right: 24px;
-  }
-  .breadcrumb_nav > li:not(:last-child):after {
-    right: 8px;
-    font-size: 12px;
   }
   .page_banner [class*=shape_leaf] {
     max-width: 100px;
