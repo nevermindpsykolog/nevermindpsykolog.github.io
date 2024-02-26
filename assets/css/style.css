@@ -43,8 +43,8 @@
   --bs-body-color: #51565D;
   --bs-body-color-rgb: 81,86,93;
   --bs-transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-  --bs-primary: #26ABA3;
-  --bs-secondary: #F7AB1E;
+  --bs-primary: #98aa32;
+  --bs-secondary: #434893;
   --bs-dark: #293039;
   --bs-primary-rgb: 38,171,163;
   --bs-secondary-rgb: 247,171,30;
@@ -578,6 +578,9 @@ button[class*=-primary]:hover {
 }
 .btn-link:hover {
   color: var(--bs-primary);
+}
+.btn-link {
+  color: #09a8f4;
 }
 .btn-link:hover .btn_text:before {
   width: 100%;
@@ -1273,7 +1276,6 @@ button[class*=-primary]:hover {
   margin-bottom: 20px;
 }
 
-.service_author,
 .service_cost_info {
   padding: 53px 60px;
   -webkit-transition: var(--bs-transition);
@@ -1283,54 +1285,17 @@ button[class*=-primary]:hover {
   -webkit-box-shadow: 0px 8px 30px 0px rgba(43, 171, 160, 0.07);
           box-shadow: 0px 8px 30px 0px rgba(43, 171, 160, 0.07);
 }
-.service_author:hover,
 .service_cost_info:hover {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
   -webkit-box-shadow: var(--bs-box-shadow);
           box-shadow: var(--bs-box-shadow);
 }
-.service_author .details_info_title,
 .service_cost_info .details_info_title {
   margin-bottom: 30px;
 }
-.service_author p,
 .service_cost_info p {
   margin-bottom: 30px;
-}
-
-.service_author .author_image {
-  width: 120px;
-  height: 120px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 120px;
-          flex: 0 0 120px;
-  overflow: hidden;
-  margin: 0 30px 0 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border-radius: var(--bs-border-radius-pill);
-}
-.service_author .author_name {
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 6px;
-}
-.service_author .author_designation {
-  display: block;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-  margin-bottom: 16px;
-  color: var(--bs-primary);
-}
-.service_author.shadow-none {
-  background-color: var(--bs-primary-bg-subtle);
-}
-.service_author.shadow-none:hover {
-  -webkit-transform: unset;
-          transform: unset;
 }
 
 .service_cost_info .item_price {
@@ -1346,7 +1311,7 @@ button[class*=-primary]:hover {
   font-size: 54px;
   font-weight: 800;
   line-height: 46px;
-  color: var(--bs-primary);
+  color: #2d3331;
   font-family: var(--bs-font-heading);
 }
 .service_cost_info .item_price sub {
@@ -1401,7 +1366,7 @@ button[class*=-primary]:hover {
 .contact_info_box .item_icon {
   font-size: 46px;
   margin-bottom: 38px;
-  color: var(--bs-primary);
+  color: #305184;
 }
 .contact_info_box .item_title {
   font-size: 24px;
@@ -1733,10 +1698,6 @@ button[class*=-primary]:hover {
     line-height: 24px;
     margin-bottom: 10px;
   }
-  .service_author .author_designation {
-    font-size: 14px;
-    line-height: 20px;
-  }
 }
 
 /* Media Screen 991px
@@ -1853,9 +1814,6 @@ button[class*=-primary]:hover {
   .page_title {
     font-size: 48px;
   }
-  .service_author .author_image {
-    margin: 0 0 30px 0;
-  }
 }
 
 /* Media Screen 767px
@@ -1945,9 +1903,6 @@ button[class*=-primary]:hover {
   [class*=_details_section] .details_content p {
     font-size: 16px;
     line-height: 26px;
-  }
-  .service_author, .service_cost_info {
-    padding: 40px;
   }
   .contact_infobox_wrapper > [class*="-3"] {
     width: 100%;
@@ -2137,7 +2092,6 @@ button[class*=-primary]:hover {
   .service_cost_info .item_price {
     margin-bottom: 20px;
   }
-  .service_author .details_info_title,
   .service_cost_info .details_info_title {
     margin-bottom: 24px;
   }
