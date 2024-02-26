@@ -1,1 +1,1 @@
-# nevermindpsykolog.github.io
+# Nevermind Psykolog
