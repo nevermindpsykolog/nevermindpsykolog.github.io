@@ -752,39 +752,6 @@ button[class*=-primary]:hover {
   max-width: 200px;
 }
 
-/* 1.09 - Videos
-================ */
-.mfp-iframe-holder .mfp-content {
-  width: 100%;
-  line-height: 0;
-  max-width: 70%;
-}
-
-.mfp-container {
-  padding: 0 15px;
-}
-
-.mfp-bg {
-  opacity: 0.9;
-  background-color: var(--bs-dark);
-}
-
-@media screen and (max-width: 1199px) {
-  .mfp-iframe-holder .mfp-content {
-    max-width: 100%;
-  }
-}
-.video_wrapper {
-  position: relative;
-  padding: 180px 60px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
-  background-position: center center;
-  border-radius: var(--bs-border-radius);
-  background-color: rgba(13, 13, 13, 0.2);
-}
-
 /* 1.10 - Social Icons
 ====================== */
 .social_title {
@@ -1264,9 +1231,6 @@ button[class*=-primary]:hover {
 [class*=_details_section] .details_content p {
   font-size: 20px;
   line-height: 32px;
-  margin-bottom: 40px;
-}
-[class*=_details_section] .video_wrapper {
   margin-bottom: 40px;
 }
 
@@ -1906,9 +1870,6 @@ button[class*=-primary]:hover {
   }
   .contact_infobox_wrapper > [class*="-3"] {
     width: 100%;
-  }
-  .video_wrapper {
-    padding: 110px 30px;
   }
   blockquote {
     padding: 40px;
