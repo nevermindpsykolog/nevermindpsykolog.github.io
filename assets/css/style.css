@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-1 - Template Elements
+1 - Elements
 * - 1.01 - Colors
 * - 1.02 - CSS Animations
 * - 1.03 - Backtotop Button
@@ -12,20 +12,20 @@
 * - 1.10 - Social Icons
 * - 1.11 - Pagination Nav
 
-2 - Template Parts
+2 - Parts
 * - 2.01 - Site Header
 * - 2.02 - Site Footer
 * - 2.03 - Page Header
 * - 2.04 - Sidebar
 
-3 - Template Components
-* - 3.01 - Page Hero Section
+3 - Components
+* - 3.01 - Page Hero
 * - 3.02 - Service
 
-4 - Template Pages
-* - 4.01 - About Page
-* - 4.02 - All Details Pages
-* - 4.03 - Contact Page
+4 - Pages
+* - 4.01 - About
+* - 4.02 - Services
+* - 4.03 - Contact
 
 */
 
@@ -384,18 +384,16 @@ mark {
 /* 1.04 - Gapping or Spacing
 ============================ */
 .section_space_lg {
-  padding-top: 110px;
+  padding-top: 180px;
   padding-bottom: 60px;
 }
-
-.section_space_md {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.section_space_sm {
+.index_section_space_lg {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
+}
+.about_section_space_lg {
+  padding-top: 160px;
+  padding-bottom: 30vh;
 }
 
 /* 1.05 - Menu bar
@@ -1140,8 +1138,8 @@ button[class*=-primary]:hover {
   max-width: 540px;
 }
 
-/* 4.02 - All Details Pages
-=========================== */
+/* 4.02 - Services Page
+======================= */
 [class*=_details_section] .details_image {
   overflow: hidden;
   margin-bottom: 30px;
@@ -1354,10 +1352,6 @@ button[class*=-primary]:hover {
     top: 110px;
     max-width: 250px;
   }
-  .section_space_lg {
-    padding-top: 95px;
-    padding-bottom: 60px;
-  }
   .section_heading .section_heading_text {
     font-size: 36px;
     font-weight: 800;
@@ -1395,14 +1389,6 @@ button[class*=-primary]:hover {
   .post_meta > li:not(:last-child) {
     margin-right: 12px;
     padding-right: 11px;
-  }
-  .blog_item .item_title {
-    font-size: 20px;
-    line-height: 26px;
-    margin: 12px 0 10px;
-  }
-  .blog_item p {
-    margin-bottom: 16px;
   }
   .accordion .accordion-item .accordion-button {
     font-size: 20px;
@@ -1488,6 +1474,9 @@ button[class*=-primary]:hover {
   .section_heading .section_heading_text {
     font-size: 30px;
     line-height: 38px;
+  }
+  .section_space_lg {
+    padding-top: 140px;
   }
   .pricing_section [class*=shape_leaf] {
     max-width: 270px;
@@ -1733,7 +1722,7 @@ button[class*=-primary]:hover {
     height: 400px;
   }
   .section_space_lg {
-    padding-top: 74px;
+    padding-top: 130px;
   }
 }
 
@@ -1888,7 +1877,7 @@ button[class*=-primary]:hover {
     height: 34px;
   }
   .section_space_lg {
-    padding-top: 74px;
+    padding-top: 110px;
   }
   .site_footer_content {
     padding: 18px 0;
@@ -1998,10 +1987,6 @@ button[class*=-primary]:hover {
   .gmap_canvas.contact_map iframe {
     height: 300px;
   }
-  .section_space_lg {
-    padding-top: 70px;
-    padding-bottom: 80px;
-  }
   .accordion .accordion-item .accordion-button {
     font-size: 18px;
     line-height: 24px;
@@ -2020,8 +2005,7 @@ button[class*=-primary]:hover {
     margin-bottom: 24px;
   }
   .section_space_lg {
-    padding-top: 54px;
-    padding-bottom: 58px;
+    padding-top: 100px;
   }
   .site_footer_content .col-sm-3 {
     width: 16%;
@@ -2069,10 +2053,6 @@ button[class*=-primary]:hover {
   }
   .consultation_form {
     padding: 70px 15px 80px;
-  }
-  .blog_item .item_title {
-    font-size: 18px;
-    line-height: 24px;
   }
   .page_title {
     font-size: 32px;
