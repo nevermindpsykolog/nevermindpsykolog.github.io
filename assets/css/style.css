@@ -31,7 +31,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 :root {
-  --bs-body-font-family: "Open Sans", sans-serif;
   --bs-font-body: "Open Sans", sans-serif;
   --bs-font-heading: "Open Sans", sans-serif;
   --bs-body-font-weight: 400;
@@ -45,17 +44,10 @@
   --bs-primary: #f4fcfa;
   --bs-secondary: var(--bs-social-link-color);
   --bs-dark: #293039;
-  --bs-primary-rgb: 38,171,163;
-  --bs-secondary-rgb: 247,171,30;
-  --bs-dark-rgb: 41,48,57;
   --bs-primary-bg-subtle: #F4FCFA;
   --bs-secondary-bg-subtle: #FEF3DE;
   --bs-link-color: var(--bs-body-color);
   --bs-link-hover-color: var(--bs-menu-text-active-color);  
-  --bs-highlight-bg: var(--bs-primary);
-  --bs-border-width: 1px;
-  --bs-border-style: solid;
-  --bs-border-color: var(--bs-primary);
   --bs-border-radius: 24px;
   --bs-border-radius-sm: 6px;
   --bs-border-radius-lg: 30px;
@@ -64,11 +56,8 @@
   --bs-border-radius-pill: 100%;
   --bs-box-shadow: 0px 1px 2px 1px rgba(43, 171, 160, 0.14);
   --bs-box-shadow-lg: 0px 20px 40px 0px rgba(43, 171, 160, 0.08);
-  --bs-focus-ring-width: 20px;
-  --bs-focus-ring-opacity: 0.25;
-  --bs-focus-ring-color: rgba(38, 171, 163, 0.25);
-  --bs-btn-text-color: var(--bs-white);
-  --bs-btn-body-color: var(--bs-social-link-color);
+  --bs-btn-text-color: var(--bs-dark);
+  --bs-btn-body-color: var(--bs-primary);
   --bs-menu-text-active-color: var(--bs-secondary);
   --bs-social-link-color: #434893;
 }
@@ -79,7 +68,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  font-style: normal;
+  font-style: normal;§
   color: var(--bs-body-color);
   font-family: var(--bs-font-body);
   background-color: var(--bs-body-bg);
@@ -165,7 +154,8 @@ hr {
   height: 1px;
   border: none;
   margin: 25px 0;
-  background-color: var(--bs-border-color);
+  background-color: var(--bs-dark);
+  background-color: ;
 }
 
 mark {
@@ -498,12 +488,12 @@ mark {
 .btn-primary {  
   --bs-btn-bg:var(--bs-btn-body-color);
   --bs-btn-color: var(--bs-btn-text-color);
-  --bs-btn-border-color: var(--bs-border-color);
+  --bs-btn-border-color: var(--bs-dark);
   --bs-btn-hover-bg: var(--bs-btn-body-color);
   --bs-btn-hover-color: var(--bs-btn-text-color);
-  --bs-btn-hover-border-color: var(--bs-border-color);
+  --bs-btn-hover-border-color: var(--bs-dark);
   --bs-btn-active-bg: var(--bs-primary);
-  --bs-btn-active-border-color: var(--bs-border-color);
+  --bs-btn-active-border-color: var(--bs-dark);
 }
 
 a[class*=-primary],
