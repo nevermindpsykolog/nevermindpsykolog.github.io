@@ -57,7 +57,7 @@
   --bs-box-shadow: 0px 1px 2px 1px rgba(43, 171, 160, 0.14);
   --bs-box-shadow-lg: 0px 20px 40px 0px rgba(43, 171, 160, 0.08);
   --bs-btn-text-color: var(--bs-dark);
-  --bs-btn-body-color: var(--bs-primary);
+  --bs-btn-body-color: #e5e5f5b8;
   --bs-menu-text-active-color: var(--bs-secondary);
   --bs-social-link-color: #434893;
 }
@@ -1366,10 +1366,6 @@ button[class*=-primary]:hover {
     margin-right: 12px;
     padding-right: 11px;
   }
-  .accordion .accordion-item .accordion-button {
-    font-size: 20px;
-    line-height: 28px;
-  }
   .contact_info_list .item_info {
     font-size: 16px;
   }
@@ -1625,9 +1621,6 @@ button[class*=-primary]:hover {
   }
   .consultation_form [class*=shape_leaf] {
     max-width: 270px;
-  }
-  .accordion .accordion-item .accordion-button {
-    padding: 20px 0 19px;
   }
   .gmap_canvas iframe {
     height: 500px;
@@ -1962,10 +1955,6 @@ button[class*=-primary]:hover {
   }
   .gmap_canvas.contact_map iframe {
     height: 300px;
-  }
-  .accordion .accordion-item .accordion-button {
-    font-size: 18px;
-    line-height: 24px;
   }
   .service_cost_info .item_price .price_value {
     font-size: 42px;
