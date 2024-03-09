@@ -931,6 +931,11 @@ button[class*=-primary]:hover {
   font-weight: 700;
   line-height: 75px;
   margin-bottom: 20px;
+  max-width: 490px;
+  backdrop-filter: blur(10px);
+}
+.hero_section .heading_description {
+  backdrop-filter: blur(10px);
 }
 .hero_section p {
   max-width: 582px;
@@ -954,10 +959,6 @@ button[class*=-primary]:hover {
           filter: blur(67px);
   background-color: var(--bs-primary);
   border-radius: var(--bs-border-radius-pill);
-}
-.hero_section .shape_leaf {
-  top: 160px;
-  left: -50px;
 }
 .hero_image_wrap {
   z-index: 1;
@@ -1203,7 +1204,7 @@ button[class*=-primary]:hover {
     margin: 0 10px 0 0;
   }  
   .hero_section .heading_text {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 54px;
     font-weight: 700;
   }
@@ -1212,7 +1213,7 @@ button[class*=-primary]:hover {
     margin-bottom: 30px;
   }
   .hero_section .hero_content_wrap {
-    padding-top: 200px;
+    padding-top: 220px;
   }
   .btn {
     padding: 0px 34px;
@@ -1229,13 +1230,9 @@ button[class*=-primary]:hover {
   .hero_section_counter > li {
     padding: 20px;
   }
-  .hero_section .shape_leaf {
-    top: 110px;
-    max-width: 250px;
-  }
   .section_heading .section_heading_text {
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 42px;
     margin-bottom: 10px;
   }
@@ -1314,7 +1311,7 @@ button[class*=-primary]:hover {
     margin-right: 6px;
   }
   .hero_section .heading_text {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 44px;
     margin-bottom: 10px;
   }
@@ -1322,7 +1319,7 @@ button[class*=-primary]:hover {
     padding: 30px;
   }
   .hero_section .hero_content_wrap {
-    padding-top: 180px;
+    padding-top: 220px;    
   }
   .hero_section_counter .counter_value {
     font-size: 30px;
@@ -1524,8 +1521,12 @@ button[class*=-primary]:hover {
   .site_footer_content .col-lg-6 {
     width: 56%;
   }
+  .hero_section {
+    background-position: center bottom;    
+  }
   .hero_section .hero_content_wrap {
-    padding-top: 160px;
+    padding-top: 180px;
+    padding-left: 100px;
   }
 }
 
@@ -1584,7 +1585,8 @@ button[class*=-primary]:hover {
     width: 68%;
   }
   .hero_section .hero_content_wrap {
-    padding-top: 160px;
+    padding-top: 170px;
+    padding-left: 75px;
   }
 }
 
@@ -1701,6 +1703,10 @@ button[class*=-primary]:hover {
   .site_footer_content .col-lg-6 {
     width: 49%;
   }
+  .hero_section .hero_content_wrap {
+    padding-top: 165px;
+    padding-left: 40px;
+  }
 }
 
 /* Media Screen 425px
@@ -1799,6 +1805,7 @@ button[class*=-primary]:hover {
   }
   .hero_section .hero_content_wrap {
     padding-top: 140px;
+    padding-left: 25px;
   }
 }
 
@@ -1852,5 +1859,12 @@ button[class*=-primary]:hover {
   }
   .site_footer_content .col-lg-6 {
     width: 63%;
+  }
+  .hero_section .hero_content_wrap {
+    padding-top: 100px;
+    padding-left: 25px;
+  }
+  .hero_section .heading_text {
+    font-size: 22px;
   }
 }
