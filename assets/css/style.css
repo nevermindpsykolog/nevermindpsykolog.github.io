@@ -915,7 +915,7 @@ button[class*=-primary]:hover {
 /* 3.01 - Page Hero Section
 =========================== */
 .hero_section {
-  padding: 250px 0 160px;
+  padding-top: 250px;
   width: 100vw;
   height: 100vh;
   background: url("../images/pareja.png") center;
@@ -1489,9 +1489,6 @@ button[class*=-primary]:hover {
     -webkit-background-size: 700px 90vh;
     -moz-background-size: 700px 90vh;
     -o-background-size: 700px 90vh;
-  }
-  .hero_section {
-    padding: 210px 0 100px;
   }
   .hero_image_wrap {
     padding: 30px;
