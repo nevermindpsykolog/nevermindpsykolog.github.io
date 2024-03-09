@@ -914,18 +914,17 @@ button[class*=-primary]:hover {
 
 /* 3.01 - Page Hero Section
 =========================== */
-.hero_section {
-  padding-top: 250px;
-  width: 100vw;
+.hero_section {  
+  width: 100%;
   height: 100vh;
-  background: url("../images/pareja.png") center;
-  background-size: 1100px 90vh;
+  background: url("../images/pareja.png") ;
+  background-size: contain;
   background-repeat: no-repeat !important;
-  background-position: right;
+  background-position: right bottom;
   //for browser compatibility
-  -webkit-background-size: 1200px 100vh;
-  -moz-background-size: 1200px 100vh;
-  -o-background-size: 1200px 100vh;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
 }
 .hero_section .heading_text {
   font-size: 42px;
@@ -938,6 +937,9 @@ button[class*=-primary]:hover {
   margin-bottom: 42px;
   font-size: var(--bs-body-font-size-md);
   line-height: var(--bs-body-line-height-md);
+}
+.hero_section .hero_content_wrap {
+  padding-top: 250px;
 }
 .hero_section .hero_section_counter {
   margin-top: 86px;
@@ -1200,13 +1202,6 @@ button[class*=-primary]:hover {
   .main_menu_list > li:not(:last-child) {
     margin: 0 10px 0 0;
   }  
-  .hero_section {
-    background-size: 1000px 90vh;
-    //for browser compatibility
-    -webkit-background-size: 1000px 90vh;
-    -moz-background-size: 1000px 90vh;
-    -o-background-size: 1000px 90vh;
-  }
   .hero_section .heading_text {
     font-size: 48px;
     line-height: 54px;
@@ -1215,6 +1210,9 @@ button[class*=-primary]:hover {
   .hero_section p {
     max-width: 490px;
     margin-bottom: 30px;
+  }
+  .hero_section .hero_content_wrap {
+    padding-top: 200px;
   }
   .btn {
     padding: 0px 34px;
@@ -1315,13 +1313,6 @@ button[class*=-primary]:hover {
     font-size: 14px;
     margin-right: 6px;
   }
-  .hero_section {
-    background-size: 850px 90vh;
-    //for browser compatibility
-    -webkit-background-size: 850px 90vh;
-    -moz-background-size: 850px 90vh;
-    -o-background-size: 850px 90vh;
-  }
   .hero_section .heading_text {
     font-size: 40px;
     line-height: 44px;
@@ -1329,6 +1320,9 @@ button[class*=-primary]:hover {
   }
   .hero_image_wrap {
     padding: 30px;
+  }
+  .hero_section .hero_content_wrap {
+    padding-top: 180px;
   }
   .hero_section_counter .counter_value {
     font-size: 30px;
@@ -1423,13 +1417,6 @@ button[class*=-primary]:hover {
   .contact_infobox_wrapper > [class*="-3"] {
     width: 33.333%;
   }
-  .hero_section {
-    background-size: 800px 90vh;
-    //for browser compatibility
-    -webkit-background-size: 800px 90vh;
-    -moz-background-size: 800px 90vh;
-    -o-background-size: 800px 90vh;
-  }
 }
 
 /* Media Screen 991px
@@ -1483,13 +1470,6 @@ button[class*=-primary]:hover {
     line-height: 20px;
     padding: 12px 20px;
   }  
-  .hero_section {
-    background-size: 700px 90vh;
-    //for browser compatibility
-    -webkit-background-size: 700px 90vh;
-    -moz-background-size: 700px 90vh;
-    -o-background-size: 700px 90vh;
-  }
   .hero_image_wrap {
     padding: 30px;
     margin-top: 20px;
@@ -1544,6 +1524,9 @@ button[class*=-primary]:hover {
   .site_footer_content .col-lg-6 {
     width: 56%;
   }
+  .hero_section .hero_content_wrap {
+    padding-top: 160px;
+  }
 }
 
 /* Media Screen 767px
@@ -1559,14 +1542,6 @@ button[class*=-primary]:hover {
   .section_space_lg {
     padding-top: 130px;
   }
-  .hero_section {    
-    background-size: 700px 90vh;
-    background-position: center;
-    //for browser compatibility
-    -webkit-background-size: 700px 90vh;
-    -moz-background-size: 700px 90vh;
-    -o-background-size: 700px 90vh;
-}
 }
 
 /* Media Screen 680px
@@ -1608,6 +1583,9 @@ button[class*=-primary]:hover {
   .site_footer_content .col-lg-6 {
     width: 68%;
   }
+  .hero_section .hero_content_wrap {
+    padding-top: 160px;
+  }
 }
 
 /* Media Screen 575px
@@ -1618,14 +1596,6 @@ button[class*=-primary]:hover {
   }
   .header_btns_group > li:not(:first-child) {
     display: none;
-  }
-  .hero_section {
-    padding: 200px 0 100px;
-    background-size: 600px 90vh;
-    //for browser compatibility
-    -webkit-background-size: 600px 90vh;
-    -moz-background-size: 600px 90vh;
-    -o-background-size: 600px 90vh;
   }
   .hero_section .heading_text {
     font-size: 34px;
@@ -1826,6 +1796,9 @@ button[class*=-primary]:hover {
   }
   .site_footer_content .col-lg-6 {
     width: 54%;
+  }
+  .hero_section .hero_content_wrap {
+    padding-top: 140px;
   }
 }
 
