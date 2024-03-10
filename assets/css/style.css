@@ -1018,8 +1018,45 @@ button[class*=-primary]:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.service_item .item_icon_couples {
+  width: 100%;
+  height: auto;
+  margin-top: -15px;
+  border-radius: 100%;
+  margin-bottom: 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;          
+}
 .service_item .item_icon_couples img {
   width: 47%;
+}
+.service_item .item_contact_couples {
+  margin-top: 12px;
+}
+.service_item .item_icon_depression {
+  width: 50%;
+  height: auto;
+  margin-top: -30px;
+  border-radius: 100%;
+  margin-bottom: 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;          
+}
+.service_item .item_icon_depression img {
+  width: 47%;
+}
+.service_item .item_contact_depression {
+  margin-top: 8px;
 }
 .service_item .item_title {
   font-size: 24px;
@@ -1247,6 +1284,9 @@ button[class*=-primary]:hover {
   .service_item {
     padding: 45px;
   }
+  .service_item .item_contact {
+    margin-top: -10px;
+  }
   .service_item .item_title {
     font-size: 22px;
     line-height: 28px;
@@ -1274,13 +1314,10 @@ button[class*=-primary]:hover {
     margin-top: 90px;
   }
   .gmap_canvas {
-    position: relative; 
     max-width: 960px;
-    margin: auto;
   }
   .gmap_canvas iframe {
     height: 450px;
-    width: 100%;
   }
 }
 
@@ -1352,6 +1389,18 @@ button[class*=-primary]:hover {
   .btn_wrap {
     padding: 40px 0;
   }
+  .service_item .item_contact {
+    margin-top: -17px;
+  }
+  .service_item .item_contact_depression {
+    margin-top: -12px;
+  }
+  .gmap_canvas {
+    max-width: 930px;
+  }
+  .gmap_canvas iframe {
+    height: 400px;
+  }
 }
 
 /* Media Screen 1024px
@@ -1413,6 +1462,9 @@ button[class*=-primary]:hover {
   }
   .contact_infobox_wrapper > [class*="-3"] {
     width: 33.333%;
+  }
+  .gmap_canvas {
+    max-width: 790px;
   }
 }
 
@@ -1478,8 +1530,11 @@ button[class*=-primary]:hover {
   .consultation_form [class*=shape_leaf] {
     max-width: 270px;
   }
+  .gmap_canvas {
+    max-width: 560px;
+  }
   .gmap_canvas iframe {
-    height: 500px;
+    height: 300px;
   }
   .site_footer {
     text-align: center;
@@ -1587,6 +1642,12 @@ button[class*=-primary]:hover {
   .hero_section .hero_content_wrap {
     padding-top: 170px;
     padding-left: 75px;
+  }
+  .gmap_canvas {
+    max-width: 514px;
+  }
+  .gmap_canvas iframe {
+    height: 280px;
   }
 }
 
@@ -1707,6 +1768,9 @@ button[class*=-primary]:hover {
     padding-top: 165px;
     padding-left: 40px;
   }
+  .gmap_canvas {
+    max-width: 375px;
+  }
 }
 
 /* Media Screen 425px
@@ -1775,9 +1839,6 @@ button[class*=-primary]:hover {
     font-size: 26px;
     line-height: 30px;
   }
-  .gmap_canvas.contact_map iframe {
-    height: 300px;
-  }
   .service_cost_info .item_price .price_value {
     font-size: 42px;
     line-height: 34px;
@@ -1806,6 +1867,9 @@ button[class*=-primary]:hover {
   .hero_section .hero_content_wrap {
     padding-top: 140px;
     padding-left: 25px;
+  }
+  .gmap_canvas {
+    max-width: 334px;
   }
 }
 
@@ -1866,5 +1930,11 @@ button[class*=-primary]:hover {
   }
   .hero_section .heading_text {
     font-size: 22px;
+  }
+  .gmap_canvas {
+    max-width: 255px;
+  }
+  .gmap_canvas iframe {
+    height: 300px;    
   }
 }
