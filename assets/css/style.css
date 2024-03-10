@@ -1018,7 +1018,7 @@ button[class*=-primary]:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.service_item .item_icon_aux img {
+.service_item .item_icon_couples img {
   width: 47%;
 }
 .service_item .item_title {
