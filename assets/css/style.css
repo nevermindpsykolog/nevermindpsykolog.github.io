@@ -226,7 +226,7 @@ mark {
   content: "\f107";
   font-weight: 400;
   color: var(--bs-body-color);
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6 Free";
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -418,9 +418,6 @@ mark {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.btn .btn_icon {
-  margin-left: 8px;
-}
 .btn:hover {
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
@@ -480,28 +477,6 @@ button[class*=-primary]:hover {
   -webkit-transition: width 0.6s cubic-bezier(0.1, 0.75, 0.25, 1);
   transition: width 0.6s cubic-bezier(0.1, 0.75, 0.25, 1);
 }
-.btn-link .btn_icon {
-  width: 25px;
-  height: 25px;
-  font-size: 15px;
-  margin-left: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: var(--bs-white);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: var(--bs-transition);
-  transition: var(--bs-transition);
-  background-color: var(--bs-menu-text-active-color);
-  border-radius: var(--bs-border-radius-pill);
-  -webkit-box-shadow: 0 8px 20px 0 rgba(43, 171, 160, 0.3);
-          box-shadow: 0 8px 20px 0 rgba(43, 171, 160, 0.3);
-}
 .btn-link:hover {
   color: var(--bs-link-hover-color);
 }
@@ -510,10 +485,6 @@ button[class*=-primary]:hover {
 }
 .btn-link:hover .btn_text:before {
   width: 100%;
-}
-.btn-link:hover .btn_icon {
-  -webkit-transform: translateX(4px);
-          transform: translateX(4px);
 }
 
 /* 1.07 - Typography
@@ -604,7 +575,6 @@ button[class*=-primary]:hover {
 .pagination_wrap {
   padding-top: 50px;
 }
-
 .pagination_nav {
   margin: -5px;
 }
@@ -711,7 +681,7 @@ button[class*=-primary]:hover {
   margin: 3px 0 0 4px;
   -webkit-transition: var(--bs-transition);
   transition: var(--bs-transition);
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6 Free";
 }
 .main_menu_list .dropdown-menu {
   display: none;
@@ -1216,15 +1186,6 @@ button[class*=-primary]:hover {
   }
   .btn_hotline .btn_text {
     font-size: 14px;
-  }
-  .btn_hotline .btn_icon {
-    width: 32px;
-    height: 32px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 32px;
-            flex: 0 0 32px;
-    font-size: 14px;
-    margin-right: 6px;
   }
   .hero_section .heading_text {
     font-size: 36px;
