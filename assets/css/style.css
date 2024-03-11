@@ -1184,9 +1184,6 @@ button[class*=-primary]:hover {
     font-size: 12px;
     margin: 2px 0 0 3px;
   }
-  .btn_hotline .btn_text {
-    font-size: 14px;
-  }
   .hero_section .heading_text {
     font-size: 36px;
     line-height: 44px;
