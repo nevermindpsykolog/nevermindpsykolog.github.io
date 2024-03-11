@@ -218,7 +218,10 @@ mark {
   color: var(--bs-primary);
   background-color: var(--bs-primary-bg-subtle);
 }
-
+.dropdown-menu .dropdown-item:hover {
+  color: var(--bs-secondary);
+  background-color: var(--bs-primary-bg-subtle);
+}
 .dropdown-toggle::after {
   margin: 0;
   border: none;
@@ -228,7 +231,6 @@ mark {
   color: var(--bs-body-color);
   font-family: "Font Awesome 6 Free";
 }
-
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
