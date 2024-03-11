@@ -612,7 +612,8 @@ button[class*=-primary]:hover {
   transition: all 0.3s ease;
 }
 .site_header.sticky {
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 0px;
   background-color: var(--bs-white);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
@@ -936,7 +937,15 @@ button[class*=-primary]:hover {
 /* 4.01 About Page
 ================== */
 .about_content .section_heading .section_heading_description {
-  max-width: 540px;
+  max-width: 643px;
+  padding-top: 90px;
+  padding-left: 80px;
+  font-size: 18px;
+  line-height: 34px;
+  backdrop-filter: blur(10px);
+}
+.about_section img {
+  padding-top: 10px;
 }
 
 /* 4.02 - Services Page
@@ -1273,6 +1282,10 @@ button[class*=-primary]:hover {
   .site_header {
     padding: 15px 0px;
   }
+  .site_header.sticky {
+    padding-top: 10px;
+    padding-bottom: 15px;  
+  }
   .header_btns_group > li:first-child {
     display: inline-block;
   }
@@ -1347,6 +1360,15 @@ button[class*=-primary]:hover {
     padding-top: 180px;
     padding-left: 100px;
   }
+  .about_content .section_heading .section_heading_description {
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .about_section img {
+    padding-top: 0px;
+    padding-left: 30px;
+  }
 }
 
 /* Media Screen 767px
@@ -1412,6 +1434,9 @@ button[class*=-primary]:hover {
   }
   .gmap_canvas iframe {
     height: 280px;
+  }
+  .about_content .section_heading .section_heading_description {
+    margin-left: -35px;
   }
 }
 
@@ -1492,6 +1517,9 @@ button[class*=-primary]:hover {
   .gmap_canvas {
     max-width: 375px;
   }
+  .about_content .section_heading .section_heading_description {
+    margin-left: -60px;
+  }
 }
 
 /* Media Screen 425px
@@ -1570,6 +1598,9 @@ button[class*=-primary]:hover {
   }
   .gmap_canvas {
     max-width: 334px;
+  }
+  .about_content .section_heading .section_heading_description {
+    margin-left: -64px;
   }
 }
 

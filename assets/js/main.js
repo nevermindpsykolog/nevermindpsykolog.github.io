@@ -1,11 +1,8 @@
-// =====================
-// * Author:  Merkulove
-// =====================
 
 (function($) {
   "use strict";
 
-  // Back To Top - Start
+  // Back To Top
   // --------------------------------------------------
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
@@ -21,7 +18,7 @@
     });
   });
 
-  // Sticky Header - Start
+  // Sticky Header
   // --------------------------------------------------
   $(window).on('scroll', function () {
     if ($(this).scrollTop() > 0) {
@@ -31,14 +28,7 @@
     }
   });
 
-  // Pricing Toggle Button - Start
-  // --------------------------------------------------
-  $(".pricing_toggle_btn").on('click',function(){
-    $(this).toggleClass("active");
-    $(".pricing_item").toggleClass("active");
-  })
-
-  // Dropdown - Start
+  // Dropdown
   // --------------------------------------------------
   $(document).ready(function () {
     $(".dropdown").on('mouseover', function () {
