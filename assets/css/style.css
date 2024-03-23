@@ -371,10 +371,6 @@ mark {
 
 /* 1.06 - Buttons
 ================= */
-.btn_wrap {
-  padding: 50px 0;
-}
-
 .btns_group {
   margin: -12px;
 }
@@ -871,6 +867,10 @@ button[class*=-primary]:hover {
   -webkit-box-shadow: var(--bs-box-shadow-lg);
           box-shadow: var(--bs-box-shadow-lg);
 }
+.col-lg-4 {
+  flex: -1 0 auto;
+  width: 50%;
+}
 .service_item .item_icon {
   width: 90px;
   height: 90px;
@@ -887,7 +887,7 @@ button[class*=-primary]:hover {
           justify-content: center;
 }
 .service_item .item_icon_couples {
-  width: 100%;
+  width: 85%;
   height: auto;
   margin-top: -15px;
   border-radius: 100%;
@@ -904,9 +904,9 @@ button[class*=-primary]:hover {
   width: 47%;
 }
 .service_item .item_contact_couples {
-  margin-top: 12px;
+  margin-top: 55px;
 }
-.service_item .item_icon_depression {
+.service_item .item_icon_individual {
   width: 50%;
   height: auto;
   margin-top: -30px;
@@ -920,10 +920,10 @@ button[class*=-primary]:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;          
 }
-.service_item .item_icon_depression img {
+.service_item .item_icon_individual img {
   width: 47%;
 }
-.service_item .item_contact_depression {
+.service_item .item_contact_individual {
   margin-top: 8px;
 }
 .service_item .item_title {
@@ -1234,13 +1234,10 @@ button[class*=-primary]:hover {
   .pricing_section [class*=shape_leaf] {
     max-width: 270px;
   }
-  .btn_wrap {
-    padding: 40px 0;
-  }
   .service_item .item_contact {
     margin-top: -17px;
   }
-  .service_item .item_contact_depression {
+  .service_item .item_contact_individual {
     margin-top: -12px;
   }
   .gmap_canvas {
