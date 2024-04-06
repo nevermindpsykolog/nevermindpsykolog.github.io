@@ -28,7 +28,7 @@
   --bs-font-body: Georgia, serif;
   --bs-font-heading: Georgia, serif;
   --bs-body-font-weight: 400;
-  --bs-body-font-size: 19px;
+  --bs-body-font-size: 20px;
   --bs-body-line-height: 28px;
   --bs-body-font-size-md: 20px;
   --bs-body-line-height-md: 30px;
@@ -885,21 +885,6 @@ button[class*=-primary]:hover {
 .service_item p {
   margin-bottom: 30px;
 }
-.service_item .item_icon {
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-  margin-bottom: 30px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .col-lg-4 {
   width: 50%;
 }
@@ -922,8 +907,8 @@ button[class*=-primary]:hover {
   margin-top: -35px;
 }
 .service_item .item_contact_galanta {
-  margin-top: 29px;
-  margin-bottom: -34px;
+  margin-top: 19px;
+  margin-bottom: -28px;
 }
 .service_item .item_icon_individual {
   width: 85%;
@@ -1031,7 +1016,7 @@ button[class*=-primary]:hover {
 ====================== */
 @media screen and (max-width: 1440px) {
   :root {
-    --bs-body-font-size: 16px;
+    --bs-body-font-size: 18px;
     --bs-body-line-height: 26px;
     --bs-body-font-size-md: 18px;
     --bs-body-line-height-md: 28px;
@@ -1088,19 +1073,11 @@ button[class*=-primary]:hover {
     font-size: 18px;
     line-height: 28px;
   }
-  .service_item {
-    padding: 45px;
+  .service_item .item_contact_galanta {
+    margin-top: 26px;
   }
-  .service_item .item_contact {
-    margin-top: -10px;
-  }
-  .service_item .item_title {
-    font-size: 22px;
-    line-height: 28px;
-    margin-bottom: 12px;
-  }
-  .service_item p {
-    margin-bottom: 20px;
+  .service_item .item_contact_parental {
+    margin-bottom: 122px;
   }
   .contact_info_list .item_info {
     font-size: 16px;
@@ -1122,6 +1099,9 @@ button[class*=-primary]:hover {
 /* Media Screen 1199px
 ====================== */
 @media screen and (max-width: 1199px) {
+  .service_item {
+    font-size: 17px;    
+  }
   .main_menu_list > li > a {
     font-size: 15px;
     padding: 8px 12px;
@@ -1169,14 +1149,8 @@ button[class*=-primary]:hover {
   .section_space_lg {
     padding-top: 140px;
   }
-  .pricing_section [class*=shape_leaf] {
-    max-width: 270px;
-  }
-  .service_item .item_contact {
-    margin-top: -17px;
-  }
-  .service_item .item_contact_individual {
-    margin-top: -12px;
+  .service_item .item_contact_galanta {
+    margin-bottom: -2px;
   }
   .gmap_canvas {
     max-width: 930px;
@@ -1188,20 +1162,7 @@ button[class*=-primary]:hover {
 
 /* Media Screen 1024px
 ====================== */
-@media screen and (max-width: 1024px) {
-  [class*=_details_section] .details_item_title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-  [class*=_details_section] .details_content p {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 30px;
-  }
-  .details_info_title {
-    font-size: 20px;
-    line-height: 24px;
-  }
+@media screen and (max-width: 1024px) {  
   .contact_infobox_wrapper > [class*="-3"] {
     width: 33.333%;
   }
