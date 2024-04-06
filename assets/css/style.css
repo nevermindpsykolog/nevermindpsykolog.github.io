@@ -15,16 +15,12 @@
 * - 2.01 - Site Header
 * - 2.02 - Site Footer
 * - 2.03 - Page Header
-* - 2.04 - Sidebar
+* - 2.04 - Page Hero
 
-3 - Components
-* - 3.01 - Page Hero
-* - 3.02 - Service
-
-4 - Pages
-* - 4.01 - About
-* - 4.02 - Services
-* - 4.03 - Contact
+3 - Pages
+* - 3.01 - About
+* - 3.02 - Services
+* - 3.03 - Contact
 
 */
 
@@ -775,7 +771,7 @@ button[class*=-primary]:hover {
   margin-bottom: 30px;
 }
 
-/* 3.01 - Page Hero Section
+/* 2.04 - Page Hero Section
 =========================== */
 .hero_section {  
   width: 100%;
@@ -849,8 +845,47 @@ button[class*=-primary]:hover {
   border-radius: var(--bs-border-radius-xxl);
 }
 
-/* 3.02 - Service
-================= */
+/* 3.01 About Page
+================== */
+.about_content .section_heading .section_heading_description {
+  max-width: 643px;
+  padding-top: 90px;
+  padding-left: 80px;
+  font-size: 18px;
+  line-height: 34px;
+  backdrop-filter: blur(10px);
+}
+.about_section img {
+  padding-top: 10px;
+}
+
+/* 3.02 - Services Page
+======================= */
+[class*=_details_section] .details_image {
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: var(--bs-border-radius);
+}
+[class*=_details_section] .details_image img {
+  width: 100%;
+  display: block;
+}
+[class*=_details_section] .details_item_title {
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+[class*=_details_section] .details_content p {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+.details_info_title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
 .service_item {
   padding: 60px 60px 53px;
   -webkit-box-shadow: var(--bs-box-shadow);
@@ -908,16 +943,17 @@ button[class*=-primary]:hover {
       -ms-flex-pack: center;          
 }
 .service_item .item_icon_galanta img {
-  width: 47%;
+  width: 20%;
+  margin-top: -35px;
 }
 .service_item .item_contact_galanta {
   margin-top: 29px;
   margin-bottom: -34px;
 }
 .service_item .item_icon_individual {
-  width: 40%;
+  width: 85%;
   height: auto;
-  margin-top: -30px;
+  margin-top: -15px;
   border-radius: 100%;
   margin-bottom: 0px;
   display: -webkit-inline-box;
@@ -949,7 +985,7 @@ button[class*=-primary]:hover {
       -ms-flex-pack: center;
 }
 .service_item .item_icon_parental img {
-  width: 47%;
+  width: 39%;
 }
 .service_item .item_contact_parental {
   margin-top: 25px;
@@ -970,7 +1006,7 @@ button[class*=-primary]:hover {
       -ms-flex-pack: center;          
 }
 .service_item .item_icon_students img {
-  width: 18%;
+  width: 27%;
   margin-top: -35px;
 }
 .service_item .item_contact_students {
@@ -978,122 +1014,7 @@ button[class*=-primary]:hover {
   margin-bottom: -34px;
 }
 
-/* 4.01 About Page
-================== */
-.about_content .section_heading .section_heading_description {
-  max-width: 643px;
-  padding-top: 90px;
-  padding-left: 80px;
-  font-size: 18px;
-  line-height: 34px;
-  backdrop-filter: blur(10px);
-}
-.about_section img {
-  padding-top: 10px;
-}
-
-/* 4.02 - Services Page
-======================= */
-[class*=_details_section] .details_image {
-  overflow: hidden;
-  margin-bottom: 30px;
-  border-radius: var(--bs-border-radius);
-}
-[class*=_details_section] .details_image img {
-  width: 100%;
-  display: block;
-}
-[class*=_details_section] .details_item_title {
-  font-size: 42px;
-  line-height: 50px;
-  margin-bottom: 20px;
-}
-[class*=_details_section] .details_content p {
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 40px;
-}
-.details_info_title {
-  font-size: 24px;
-  line-height: 30px;
-  margin-bottom: 20px;
-}
-.service_cost_info {
-  padding: 53px 60px;
-  -webkit-transition: var(--bs-transition);
-  transition: var(--bs-transition);
-  background-color: var(--bs-white);
-  border-radius: var(--bs-border-radius);
-  -webkit-box-shadow: 0px 8px 30px 0px rgba(43, 171, 160, 0.07);
-          box-shadow: 0px 8px 30px 0px rgba(43, 171, 160, 0.07);
-}
-.service_cost_info:hover {
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-  -webkit-box-shadow: var(--bs-box-shadow);
-          box-shadow: var(--bs-box-shadow);
-}
-.service_cost_info .details_info_title {
-  margin-bottom: 30px;
-}
-.service_cost_info p {
-  margin-bottom: 30px;
-}
-.service_cost_info .item_price {
-  margin-bottom: 30px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.service_cost_info .item_price .price_value {
-  font-size: 54px;
-  font-weight: 800;
-  line-height: 46px;
-  color: #2d3331;
-  font-family: var(--bs-font-heading);
-}
-.service_cost_info .item_price sub {
-  bottom: 0;
-  line-height: 1;
-  color: #8C8F92;
-  font-size: 18px;
-  padding-left: 5px;
-  display: inline-block;
-}
-.service_cost_info.p-0 {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: transparent;
-}
-.service_cost_info.p-0:hover {
-  -webkit-transform: unset;
-          transform: unset;
-}
-.service_cost_info.p-0 .details_info_title {
-  margin-bottom: 20px;
-}
-.service_cost_info.p-0 .item_price {
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.service_cost_info.p-0 .item_price sub {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  bottom: 0;
-  padding: 0 0 10px;
-}
-
-/* 4.03 - Contact Page
+/* 3.03 - Contact Page
 ====================== */
 .contact_info_box {
   padding: 40px;
