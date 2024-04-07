@@ -1016,7 +1016,7 @@ button[class*=-primary]:hover {
 ====================== */
 @media screen and (max-width: 1440px) {
   :root {
-    --bs-body-font-size: 18px;
+    --bs-body-font-size: 17px;
     --bs-body-line-height: 26px;
     --bs-body-font-size-md: 18px;
     --bs-body-line-height-md: 28px;
@@ -1266,6 +1266,9 @@ button[class*=-primary]:hover {
   .about_section img {
     padding-top: 0px;
     padding-left: 30px;
+  }
+  .col-lg-4 {
+    width: 100%;
   }
 }
 
