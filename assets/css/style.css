@@ -1,27 +1,24 @@
 @charset "UTF-8";
 /*
 1 - Elements
-* - 1.01 - Colors
-* - 1.02 - CSS Animations
-* - 1.03 - Backtotop Button
-* - 1.04 - Gapping or Spacing
-* - 1.05 - Menu bar (unordered lists)
-* - 1.06 - Buttons
-* - 1.07 - Typography
-* - 1.08 - Social Icons
-* - 1.09 - Pagination Nav
-
+* 1.01 - Colors
+* 1.02 - CSS Animations
+* 1.03 - Backtotop Button
+* 1.04 - Gapping or Spacing
+* 1.05 - Menu bar (unordered lists)
+* 1.06 - Buttons
+* 1.07 - Typography
+* 1.08 - Social Icons
+* 1.09 - Pagination Nav
 2 - Parts
-* - 2.01 - Site Header
-* - 2.02 - Site Footer
-* - 2.03 - Page Header
-* - 2.04 - Page Hero
-
+* 2.01 - Site Header
+* 2.02 - Site Footer
+* 2.03 - Page Header
+* 2.04 - Page Hero
 3 - Pages
-* - 3.01 - About
-* - 3.02 - Services
-* - 3.03 - Contact
-
+* 3.01 - About
+* 3.02 - Services
+* 3.03 - Contact
 */
 
 :root {
@@ -949,7 +946,7 @@ button[class*=-primary]:hover {
 }
 .service_item .item_contact_parental {
   margin-top: 25px;
-  margin-bottom: 134px;
+  margin-bottom: 108px;
 }
 .service_item .item_icon_students {
   width: 85%;
@@ -972,6 +969,48 @@ button[class*=-primary]:hover {
 .service_item .item_contact_students {
   margin-top: 8px;
   margin-bottom: -34px;
+}
+
+.toggle_btn {
+  display: inline-block;
+  padding: 10px;
+  
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.toggle_btn i {
+  font-size: 20px;
+}
+.content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  margin-bottom: 10px;
+}
+.content.show {
+  margin-bottom: 20px;
+}
+.content_individual {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  margin-bottom: -21px;
+}
+.content_individual.show {
+  margin-bottom: 20px;
+}
+.content_parental {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  margin-bottom: -134px;
+}
+.content_parental.show {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 /* 3.03 - Contact Page

@@ -58,7 +58,7 @@
                     <li>
                       <a class="nav-link" href="about.html">Om Oss</a>
                     </li>
-                    <li>
+                    <li class="active">
                       <a class="nav-link" href="service.html">Tjänster</a>
                     </li> 
                     <li>
@@ -121,20 +121,27 @@
             </div>
 
             <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-6 col-sm-6">
+             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item">
                   <div class="item_icon_individual">
                     <img src="assets/images/icons/palomas.png"
                          alt="Individuella konsultationer - Nevermind Psykolog">
                   </div>
                   <div class="item_contact_individual">
-                    <h3 class="item_title">Individuella konsultationer</h3>
-                    <p>
-                      Att gå i terapi innebär en djupt personlig resa. Det är inte alltid lätt, men det kan vara värt det för den som vill hitta vägen till ett mer meningsfullt liv och lära sig att hantera besvärliga tankar och känslor, oro eller ångest. Vi kommer att hjälpa dig att utforska vem du är och vad som är viktigt för dig. Tillsammans tränar vi på färdigheter som gör ditt liv bättre. 
-                    </p>
-                    <p>
-                      Psykologerna på Nevermind är experter i psykologisk flexibilitet, använder sig av vetenskapliga metoder och har en stor erfarenhetsbank. Vi vet att det kan vara en stor tröskel att börja gå i terapi, och vi gör vårt bästa för att det ska kännas enkelt och bekvämt för dig. Vi kommer att vara där med dig genom hela resan. Kom som du är. 
-                    </p>                    
+                    <h3 class="item_title">Individuella konsultationer
+                    <button class="toggle_btn" onclick="toggleContent(this)">
+                      <i class="fas fa-plus"></i>
+                      <i class="fas fa-minus" style="display:none;"></i>
+                    </button>
+                    </h3>
+                    <div class="content_individual">
+                      <p>
+                        Att gå i terapi innebär en djupt personlig resa. Det är inte alltid lätt, men det kan vara värt det för den som vill hitta vägen till ett mer meningsfullt liv och lära sig att hantera besvärliga tankar och känslor, oro eller ångest. Vi kommer att hjälpa dig att utforska vem du är och vad som är viktigt för dig. Tillsammans tränar vi på färdigheter som gör ditt liv bättre. 
+                      </p>
+                      <p>
+                        Psykologerna på Nevermind är experter i psykologisk flexibilitet, använder sig av vetenskapliga metoder och har en stor erfarenhetsbank. Vi vet att det kan vara en stor tröskel att börja gå i terapi, och vi gör vårt bästa för att det ska kännas enkelt och bekvämt för dig. Vi kommer att vara där med dig genom hela resan. Kom som du är.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -145,16 +152,23 @@
                          alt="Galanta Gruppen - Nevermind Psykolog">
                   </div>
                   <div class="item_contact_galanta">
-                    <h3 class="item_title">Galanta Gruppen</h3>
-                    <p>
-                      Vi lever i ett samhälle som är mer uppkopplat än någonsin, där vi har möjlighet att vara i ständig kontakt med varandra. Vi har tillgång till varandra, oavsett tidpunkt eller plats. Och ändå är det svårt att behålla kontakten med andra! Det är många som känner igen sig i denna paradox. 
-                    </p>
-                    <p>
-                      Vi psykologer vet att det viktigaste för en människa är andra människor. Vi behöver meningsfulla relationer för att må bra. Att vara duktig på att skapa och behålla sådana relationer är en färdighet som man kan träna upp precis som att cykla eller laga mat. 
-                    </p>
-                    <p>
-                      I denna grupp övar vi på att skapa meningsfulla relationer och göra så att de håller.
-                    </p>
+                    <h3 class="item_title">Galanta Gruppen
+                    <button class="toggle_btn" onclick="toggleContent(this)">
+                      <i class="fas fa-plus"></i>
+                      <i class="fas fa-minus" style="display:none;"></i>
+                    </button>
+                    </h3>
+                    <div class="content">
+                      <p>
+                        Vi lever i ett samhälle som är mer uppkopplat än någonsin, där vi har möjlighet att vara i ständig kontakt med varandra. Vi har tillgång till varandra, oavsett tidpunkt eller plats. Och ändå är det svårt att behålla kontakten med andra! Det är många som känner igen sig i denna paradox. 
+                      </p>
+                      <p>
+                        Vi psykologer vet att det viktigaste för en människa är andra människor. Vi behöver meningsfulla relationer för att må bra. Att vara duktig på att skapa och behålla sådana relationer är en färdighet som man kan träna upp precis som att cykla eller laga mat. 
+                      </p>
+                      <p>
+                        I denna grupp övar vi på att skapa meningsfulla relationer och göra så att de håller.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -165,10 +179,17 @@
                          alt="Föräldrasamtal - Nevermind Psykolog">
                   </div>
                   <div class="item_contact_parental">
-                    <h3 class="item_title">Föräldrasamtal</h3>
-                    <p>
-                      Vi erbjuder föräldrasamtal där vi utrustar dig med verktyg för att ha en bra relation med ditt barn. Vi pratar om utmaningar som kan uppstå och ger dig färdigheter för att göra föräldraskapet roligare. Målet är att hjälpa dig att bli en bättre förälder och skapa en fin atmosfär för dig och ditt barn. 
-                    </p>
+                    <h3 class="item_title">Föräldrasamtal
+                    <button class="toggle_btn" onclick="toggleContent(this)">
+                      <i class="fas fa-plus"></i>
+                      <i class="fas fa-minus" style="display:none;"></i>
+                    </button>
+                    </h3>
+                    <div class="content_parental">
+                      <p>
+                        Vi erbjuder föräldrasamtal där vi utrustar dig med verktyg för att ha en bra relation med ditt barn. Vi pratar om utmaningar som kan uppstå och ger dig färdigheter för att göra föräldraskapet roligare. Målet är att hjälpa dig att bli en bättre förälder och skapa en fin atmosfär för dig och ditt barn. 
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -179,14 +200,20 @@
                          alt="Studenthjälpen - Nevermind Psykolog">
                   </div>
                   <div class="item_contact_students">
-                    <h3 class="item_title">Studenthjälpen</h3>
-                    <p>
-                      Studentlivet innebär mycket frihet. Ibland kan friheten bli en tung börda. Ansvarskänslan och osäkerheten kan bli överväldigande. Man kan hamna i en spiral av prokrastinering eller tappa motivationen. Det är inte ovanligt att hamna efter i studierna. Det kan bli alldeles för mycket att göra. Hemlängtan och ensamhetskänslan kan vara andra utmaningar.
-                    </p>
-                    <p>
-                     Vi på Nevermind har en stor förståelse och mycket erfarenhet av allt detta. Vi lyssnar, hjälper dig att sortera och ta steg mot ett bättre liv. 
-                    </p>
-                  </div>
+                    <h3 class="item_title">Studenthjälpen
+                    <button class="toggle_btn" onclick="toggleContent(this)">
+                      <i class="fas fa-plus"></i>
+                      <i class="fas fa-minus" style="display:none;"></i>
+                    </button>
+                    </h3>
+                    <div class="content">
+                      <p>
+                        Studentlivet innebär mycket frihet. Ibland kan friheten bli en tung börda. Ansvarskänslan och osäkerheten kan bli överväldigande. Man kan hamna i en spiral av prokrastinering eller tappa motivationen. Det är inte ovanligt att hamna efter i studierna. Det kan bli alldeles för mycket att göra. Hemlängtan och ensamhetskänslan kan vara andra utmaningar.
+                      </p>
+                      <p>
+                        Vi på Nevermind har en stor förståelse och mycket erfarenhet av allt detta. Vi lyssnar, hjälper dig att sortera och ta steg mot ett bättre liv. 
+                      </p>
+                    </div>
                 </div>
               </div>
             </div>
@@ -262,6 +289,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-dropdown-ml-hack.min.js"></script>
+    <script src="assets/js/toggleContent.js"></script>
 
     <!-- Custom -->
     <script src="assets/js/main.js"></script>
