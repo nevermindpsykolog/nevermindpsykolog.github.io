@@ -21,26 +21,21 @@
     <title>Nevermind Psykolog</title>
     <link rel="shortcut icon" href="assets/images/site_logo/tab_icon.png">
 
-    <!-- Framework - CSS Include -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <!-- Icon Font - CSS Include -->
+    <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
     <link rel="stylesheet" type="text/css" href="assets/css/brands.css">
     <link rel="stylesheet" type="text/css" href="assets/css/solid.css">
 
-    <!-- Custom - CSS Include -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <!-- Language Dropdown - CSS Include -->
+    <!-- Language Dropdown -->
     <link rel="stylesheet" type="text/css" href="assets/css/flag-icons.min.css">
   </head>
 
   <body>
-    <!-- Body Wrap -->
     <div class="page_wrapper">
-
-      <!-- Back To Top -->
       <div class="backtotop">
         <a href="#" class="scroll">
           <i class="fa-solid fa-arrow-up"></i>
@@ -60,20 +55,17 @@
               </div>
             </div>
             <div class="col-lg-6 col-2">
-              <nav class="main_menu navbar navbar-expand-lg">
+              <nav id="navbar" class="main_menu navbar navbar-expand-lg">
                 <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
                   <ul class="main_menu_list unordered_list">
-                    <li class="active">
-                      <a class="nav-link" href="index.html">Hem</a>
+                    <li>
+                      <a class="nav-link scrollto" href="#hero_section">Hem</a>
                     </li>
                     <li>
-                      <a class="nav-link" href="about.html">Om Oss</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="service.html">Tjänster</a>
+                      <a class="nav-link scrollto" href="#service_section">Konsultationer</a>
                     </li>                  
                     <li>
-                      <a class="nav-link" href="contact.html">Kontakta Oss</a>
+                      <a class="nav-link scrollto" href="#contact_section">Kontakt</a>
                     </li>
                   </ul>
                 </div>
@@ -91,12 +83,6 @@
                     <li><hr class="dropdown-divider" /></li>
                     <li>
                       <a class="dropdown-item" href="index_en.html"><i class="flag-icon flag-icon-gb"></i> English</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-es"></i> Español</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-ru"></i> Русский</a>
                     </li>
                   </ul>
                 </div>
@@ -122,7 +108,7 @@
 
         <!-- Hero Section
         ================= -->
-        <section class="hero_section decoration_wrapper">
+        <section id="hero_section" class="hero_section decoration_wrapper">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-6">
@@ -147,18 +133,13 @@
             </div>
           </div>
         </section>
-        <!-- Hero Section
-        ================= -->
 
         <!-- Service Section
         ==================== -->
-        <section class="service_section section_space_lg bg_primary_light">
+        <section id="service_section" class="service_section section_space_lg bg_primary_light">
           <div class="container">
             <div class="section_heading text-center">
               <h2 class="section_heading_text">Vad erbjuder vi</h2>
-              <p class="section_heading_description mb-0">
-                På Nermind har vi åtagit oss att tillhandahålla en rad omfattande psykoterapitjänster som är utformade för att stödja ditt mentala och känslomässiga välbefinnande. Våra proffs erbjuder ett personligt och evidensbaserat tillvägagångssätt för att hantera en mängd olika utmaningar.
-              </p>
             </div>
 
             <div class="row justify-content-center">
@@ -261,8 +242,74 @@
            </div>
           </div>
         </section>
-        <!-- Service Section
-        ==================== -->
+
+      <!-- Contact Section
+      ===================== -->
+      <section id="contact_section" class="contact_section section_space_lg">
+          <div class="container">
+            <div class="section_heading text-center">
+              <h2 class="section_heading_text">Kontaktinformation</h2>
+              <p class="section_heading_description mb-0 ">
+                Oavsett om du har frågor, vill boka ett möte eller bara kontakta oss för mer information, välkomnar vi dina frågor. 
+              </p>
+            </div>
+            <div class="contact_infobox_wrapper row justify-content-center">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="contact_info_box">
+                  <div class="item_icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="item_contact">
+                    <h3 class="item_title">Email</h3>
+                    <ul class="info_list unordered_list_block">
+                      <li>
+                        <span class="info_text">nevermindpsykolog@gmail.com</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="contact_info_box">
+                  <div class="item_icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="item_contact">
+                    <h3 class="item_title">Address</h3>
+                    <ul class="info_list unordered_list_block">
+                      <li>
+                        <span class="info_text">Skånegatan 29, Göteborg</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--
+              <div class="contact_infobox_wrapper row justify-content-center">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="contact_info_box">
+                  <div class="item_icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="item_contact">
+                    <h3 class="item_title">Phone</h3>
+                    <ul class="info_list unordered_list_block">
+                      <li>
+                        <span class="info_text">TBA</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </div>
+          <!-- Google Map
+          =============== -->
+          <div class="gmap_canvas">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.0659562671394!2d11.983393777280515!3d57.69834924048826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3764b8288d3%3A0x6c481727fda9c4d8!2sSk%C3%A5negatan%2029%2C%20412%2052%20G%C3%B6teborg!5e0!3m2!1ses!2sse!4v1709380232332!5m2!1ses!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
       </main>
       <!-- Main Body
       ============== -->
@@ -277,7 +324,7 @@
               <div class="col-lg-6">
                 <ul class="info_list unordered_list justify-content-center">
                   <li>
-                    <a href="index.html">
+                    <a href="#hero_section">
                       <span class="info_icon">
                         <i class="fa-solid fa-circle"></i>
                       </span>
@@ -285,27 +332,19 @@
                     </a>
                   </li>
                   <li>
-                    <a href="about.html">
+                    <a href="#service_section">
                       <span class="info_icon">
                         <i class="fa-solid fa-circle"></i>
                       </span>
-                      <span class="info_text">Om Oss</span>
+                      <span class="info_text">Konsultationer</span>
                     </a>
                   </li>
                   <li>
-                    <a href="service.html">
+                    <a href="#contact_section">
                       <span class="info_icon">
                         <i class="fa-solid fa-circle"></i>
                       </span>
-                      <span class="info_text">Tjänster</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact.html">
-                      <span class="info_icon">
-                        <i class="fa-solid fa-circle"></i>
-                      </span>
-                      <span class="info_text">Kontakta Oss</span>
+                      <span class="info_text">Kontakt</span>
                     </a>
                   </li>
                 </ul>
