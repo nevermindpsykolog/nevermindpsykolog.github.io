@@ -865,6 +865,7 @@ nav ul li a.active {
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .service_item p {
   margin-bottom: 30px;
@@ -879,6 +880,10 @@ nav ul li a.active {
   padding-top: 16px;
   border-radius: 100%;
   margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -888,11 +893,11 @@ nav ul li a.active {
       -ms-flex-pack: center;          
 }
 .service_item .item_icon_couples img {
-  width: 20%;
-  margin-top: -35px;
+  width: 48%;
+  margin-top: -22px;
 }
 .service_item .item_contact_couples {
-  margin-top: 4px;
+  margin-top: 36px;
   margin-bottom: -32px;
 }
 .service_item .item_icon_individual {
@@ -901,6 +906,10 @@ nav ul li a.active {
   margin-top: -15px;
   border-radius: 100%;
   margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 22px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -921,6 +930,10 @@ nav ul li a.active {
   margin-top: -30px;
   border-radius: 100%;
   margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 116px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -942,6 +955,10 @@ nav ul li a.active {
   margin-top: -25px;
   border-radius: 100%;
   margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -964,6 +981,10 @@ nav ul li a.active {
   padding-top: 16px;
   border-radius: 100%;
   margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 28px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -986,6 +1007,10 @@ nav ul li a.active {
   padding-top: 16px;
   border-radius: 100%;
   margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 28px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1191,16 +1216,16 @@ input:checked + .slider:before {
   .service_item .item_title {
     font-size: 22px;
   }
-  .service_item .item_contact_couples {
-    margin-top: 17px;
-    margin-bottom: -30px;
-  }
   .service_item .item_contact_parental {
     margin-bottom: 99px;
   }
   .service_item .item_contact_students {
     margin-top: 9px;
     margin-bottom: -45px;
+  }
+  .service_item .item_contact_couples {
+    margin-top: 36px;
+    margin-bottom: -32px;
   }
   .contact_info_list .item_info {
     font-size: 16px;
@@ -1286,7 +1311,7 @@ input:checked + .slider:before {
     margin-right: -53px;
   }
   .service_item .item_contact_couples {
-    margin-top: 21px;
+    margin-top: 32px;
     margin-bottom: -31px;
   }
   .service_item .item_contact_parental {
@@ -1326,11 +1351,11 @@ input:checked + .slider:before {
   .service_item .item_title {
     font-size: 20px;
   }
-  .service_item .item_contact_couples {
-    margin-bottom: -30px;
-  }
   .col-lg-4 {
     width: 42%;
+  }
+  .service_item .item_contact_couples {
+    margin-top: 32px;
   }
 }
 
@@ -1423,45 +1448,6 @@ input:checked + .slider:before {
   }
   .col-lg-4 {
     width: 80%;
-  }
-  .service_item .item_icon_individual {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 22px;
-  }
-  .service_item .item_icon_couples {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 18px;
-  }
-  .service_item .item_icon_parental {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 116px;
-  }
-  .service_item .item_icon_students {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 20px;
-  }
-  .service_item .item_icon_galanta {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 28px;
-  }
-  .service_item .item_icon_online {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 28px;
-  }
-  .service_item .item_title {
-    text-align: center;
   }
 }
 
