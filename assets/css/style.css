@@ -898,7 +898,7 @@ nav ul li a.active {
 }
 .service_item .item_contact_couples {
   margin-top: 36px;
-  margin-bottom: -32px;
+  margin-bottom: -30px;
 }
 .service_item .item_icon_individual {
   width: 85%;
@@ -947,7 +947,7 @@ nav ul li a.active {
 }
 .service_item .item_contact_parental {
   margin-top: 25px;
-  margin-bottom: 108px;
+  margin-bottom: 102px;
 }
 .service_item .item_icon_students {
   width: 85%;
@@ -972,7 +972,7 @@ nav ul li a.active {
 }
 .service_item .item_contact_students {
   margin-top: 4px;
-  margin-bottom: -34px;
+  margin-bottom: -38px;
 }
 .service_item .item_icon_galanta {
   width: 85%;
@@ -995,6 +995,7 @@ nav ul li a.active {
 }
 .service_item .item_icon_galanta img {
   margin-top: -35px;
+  width: 31%;
 }
 .service_item .item_contact_galanta {
   margin-top: 4px;
@@ -1021,6 +1022,7 @@ nav ul li a.active {
 }
 .service_item .item_icon_online img {
   margin-top: -35px;
+  width: 59%;
 }
 .service_item .item_contact_online {
   margin-top: 4px;
@@ -1519,7 +1521,7 @@ input:checked + .slider:before {
     width: 58%;
   }
   .service_item .item_icon_parental {
-      margin-left: 85px;
+      margin-left: 104px;
   }
 }
 
@@ -1613,13 +1615,52 @@ input:checked + .slider:before {
     padding-left: 15px;
   }
   .service_item .item_contact_couples {
-      margin-right: -53px;
+    margin-right: -26px;
+    margin-bottom: -54px;
+    margin-top: 10px;
   }
   .service_item .item_contact_parental {
-      margin-right: -53px;
+    margin-right: -53px;
+    margin-bottom: 85px;
+    margin-top: 10px;
   }
   .service_item .item_contact_students {
-      margin-right: -53px;
+    margin-right: -42px;
+  }
+  .service_item .item_contact_galanta {
+    margin-left: 42px;
+    margin-bottom: -55px;
+  }
+  .service_item .item_contact_online {
+    margin-right: -44px;
+    margin-bottom: -56px;
+  }
+  .service_item .item_icon_parental {
+    margin-left: 83px;
+  }
+  .service_item .item_contact_individual {
+    margin-top: 6px;
+    margin-bottom: -44px;
+  }
+  .service_item .item_icon_individual img {
+    width: 66%;
+    margin-left: 18px;
+    margin-top: -20px;
+  }
+  .service_item .item_icon_couples img {
+    width: 70%;
+    margin-left: 18px;
+    margin-top: -42px;
+  }  
+  .service_item .item_icon_parental img {
+    width: 56%;
+  }
+  .service_item .item_icon_students img {
+    width: 38%;
+    margin-left: 30px;
+  }
+  .service_item .item_icon_galanta img {
+    width: 50%;
   }
 }
 
@@ -1693,9 +1734,11 @@ input:checked + .slider:before {
   }
   .service_item .item_contact_individual {
     margin-right: -25px;
+    margin-bottom: -22px;
   }
   .service_item .item_contact_couples {
     margin-right: -25px;
+    margin-bottom: -34px;
   }
   .service_item .item_contact_parental {
     margin-right: -25px;
@@ -1704,6 +1747,24 @@ input:checked + .slider:before {
   .service_item .item_contact_students {
     margin-right: -25px;
     margin-bottom: -28px;
+  }
+  .service_item .item_contact_online {
+    margin-bottom: -32px;
+  }
+  .service_item .item_contact_galanta {
+    margin-bottom: -30px;
+  }
+  .service_item .item_icon_galanta img {
+    margin-top: -15px;
+  }
+  .service_item .item_icon_online img {
+    margin-top: -19px;
+  }
+  .service_item .item_icon_couples img {
+    margin-top: -24px;
+  }
+  .service_item .item_icon_individual img {
+    margin-top: -2px;
   }
 }
 
