@@ -899,6 +899,7 @@ nav ul li a.active {
 .service_item .item_contact_couples {
   margin-top: 36px;
   margin-bottom: -30px;
+  margin-left: -32px;
 }
 .service_item .item_icon_individual {
   width: 85%;
@@ -944,6 +945,7 @@ nav ul li a.active {
 }
 .service_item .item_icon_parental img {
   width: 39%;
+  margin-left: 72px;
 }
 .service_item .item_contact_parental {
   margin-top: 25px;
@@ -973,6 +975,7 @@ nav ul li a.active {
 .service_item .item_contact_students {
   margin-top: 4px;
   margin-bottom: -38px;
+  margin-left: -38px;
 }
 .service_item .item_icon_galanta {
   width: 85%;
@@ -996,6 +999,7 @@ nav ul li a.active {
 .service_item .item_icon_galanta img {
   margin-top: -35px;
   width: 31%;
+  margin-left: 20px;
 }
 .service_item .item_contact_galanta {
   margin-top: 4px;
@@ -1023,10 +1027,12 @@ nav ul li a.active {
 .service_item .item_icon_online img {
   margin-top: -35px;
   width: 59%;
+  margin-left: 14px;
 }
 .service_item .item_contact_online {
   margin-top: 4px;
   margin-bottom: -32px;
+  margin-left: -32px;
 }
 
 .content {
