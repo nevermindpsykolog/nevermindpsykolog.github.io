@@ -1157,6 +1157,68 @@ input:checked + .slider:before {
   width: 100%;
 }
 
+.section_contact_form_text p {
+  margin-top: 40px;
+  padding-bottom: 24px;
+}
+.section_contact_form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+form {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding-bottom: 42px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+label.required::after {
+  content: " *";
+  color: red;
+}
+input, textarea {
+  width: calc(100% - 1px);
+  padding: 10px;
+  margin-bottom: -22px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: var(--bs-social-link-color);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 16px;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
 /* Media Screen 1440px
 ====================== */
 @media screen and (max-width: 1440px) {
