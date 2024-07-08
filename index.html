@@ -309,7 +309,7 @@
             </div>
           </div>
           <div class="section_contact_form_text text-center">
-            <p>It is also fine to write a message in the form below.</p>
+            <p>Det går också bra att skriva ett meddelande i formuläret nedan.</p>
           </div>
             <div class="section_contact_form">
               <form id="contact-form">
@@ -402,19 +402,19 @@
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
         if (!emailPattern.test(email)) {
-            alert('Please enter a valid email address.');
+            alert('Vänligen ange en giltig e-postadress.');
         } else {
           fetch('https://docs.google.com/forms/d/e/1FAIpQLSeeJVinK58baJN12pTLHEu0s3yzeKv30Tb8V1KQUgFAPN21lw/formResponse', {
           method: 'POST',
           body: data,
           mode: 'no-cors'
           }).then(response => {
-            messageDiv.textContent = 'Message sent successfully';
+            messageDiv.textContent = 'Meddelande sänt med framgång';
             messageDiv.style.color = 'green';
             messageDiv.style.display = 'block';
             form.reset();
           }).catch(error => {
-            messageDiv.textContent = 'Error sending message';
+            messageDiv.textContent = 'Det gick inte att skicka meddelande';
             messageDiv.style.color = 'red';
             messageDiv.style.display = 'block';
             console.error('Error:', error);
