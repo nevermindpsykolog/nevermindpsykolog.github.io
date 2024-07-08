@@ -399,9 +399,7 @@
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
         if (!emailPattern.test(email)) {
-            messageDiv.textContent = 'Please enter a valid email address.';
-            messageDiv.style.color = 'red';
-            messageDiv.style.display = 'block';
+            alert('Please enter a valid email address.');
         } else {
           fetch('https://docs.google.com/forms/d/e/1FAIpQLSeeJVinK58baJN12pTLHEu0s3yzeKv30Tb8V1KQUgFAPN21lw/formResponse', {
           method: 'POST',
