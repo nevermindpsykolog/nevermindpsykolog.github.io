@@ -309,7 +309,7 @@
             </div>
           </div>
           <div class="section_contact_form_text text-center">
-            <p>Det går också bra att skriva ett meddelande i formuläret nedan.</p>
+            <p>Maila oss eller skicka ett meddelande nedan.</p>
           </div>
             <div class="section_contact_form">
               <form id="contact-form">
@@ -409,12 +409,12 @@
           body: data,
           mode: 'no-cors'
           }).then(response => {
-            messageDiv.textContent = 'Meddelande sänt med framgång';
+            messageDiv.textContent = 'Meddelandet sänt med framgång';
             messageDiv.style.color = 'green';
             messageDiv.style.display = 'block';
             form.reset();
           }).catch(error => {
-            messageDiv.textContent = 'Det gick inte att skicka meddelande';
+            messageDiv.textContent = 'Det gick inte att skicka meddelandet';
             messageDiv.style.color = 'red';
             messageDiv.style.display = 'block';
             console.error('Error:', error);
