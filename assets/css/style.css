@@ -37,7 +37,7 @@
   --bs-primary-bg-subtle: #F4FCFA;
   --bs-secondary-bg-subtle: #FEF3DE;
   --bs-link-color: var(--bs-body-color);
-  --bs-link-hover-color: var(--bs-menu-text-active-color);  
+  --bs-link-hover-color: var(--bs-menu-text-active-color);
   --bs-border-radius: 24px;
   --bs-border-radius-sm: 6px;
   --bs-border-radius-lg: 30px;
@@ -50,6 +50,7 @@
   --bs-btn-body-color: #e5e5f5b8;
   --bs-menu-text-active-color: var(--bs-secondary);
   --bs-social-link-color: #434893;
+  --bs-body-bg: #ffffff;
 }
 
 body {
@@ -58,7 +59,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  font-style: normal;§
+  font-style: normal;
   color: var(--bs-body-color);
   font-family: var(--bs-font-body);
   background-color: var(--bs-body-bg);
@@ -78,15 +79,12 @@ iframe {
 
 a:focus,
 a:active,
-input,
-input:hover,
+button:focus,
 input:focus,
-input:active,
-textarea,
-textarea:hover,
-textarea:focus,
-textarea:active {
-  outline: none;
+textarea:focus {
+  outline: 3px solid rgba(43,171,160,0.35);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px rgba(43,171,160,0.08);
 }
 
 embed,
@@ -106,6 +104,12 @@ img {
   vertical-align: middle;
 }
 
+/* Contact form status */
+.contact-status {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
 a {
   outline: 0;
   display: inline-block;
@@ -115,14 +119,12 @@ a {
   transition: var(--bs-transition);
 }
 a:active, a:focus, a:hover, a:visited {
-  outline: 0;
   text-decoration: none;
 }
 
 button {
   padding: 0px;
   border: none;
-  outline: none;
   background: none;
   display: inline-block;
   font-family: var(--bs-font-heading);
@@ -130,7 +132,9 @@ button {
   transition: var(--bs-transition);
 }
 button:focus {
-  outline: none;
+  outline: 3px solid rgba(43,171,160,0.35);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px rgba(43,171,160,0.08);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -145,7 +149,6 @@ hr {
   border: none;
   margin: 25px 0;
   background-color: var(--bs-dark);
-  background-color: ;
 }
 
 mark {
@@ -412,7 +415,7 @@ mark {
           transform: translateY(-76%);
 }
 
-.btn-primary {  
+.btn-primary {
   --bs-btn-bg:var(--bs-btn-body-color);
   --bs-btn-color: var(--bs-btn-text-color);
   --bs-btn-border-color: var(--bs-dark);
@@ -769,7 +772,7 @@ nav ul li a.active {
 
 /* 2.04 - Page Hero Section
 =========================== */
-.hero_section {  
+.hero_section {
   width: 100%;
   height: 100vh;
   background: url("../images/pareja.png") ;
@@ -890,7 +893,7 @@ nav ul li a.active {
     -webkit-box-align: center;
       -ms-flex-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;          
+      -ms-flex-pack: center;
 }
 .service_item .item_icon_couples img {
   width: 48%;
@@ -967,7 +970,7 @@ nav ul li a.active {
     -webkit-box-align: center;
       -ms-flex-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;          
+      -ms-flex-pack: center;
 }
 .service_item .item_icon_students img {
   width: 27%;
@@ -994,7 +997,7 @@ nav ul li a.active {
     -webkit-box-align: center;
       -ms-flex-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;          
+      -ms-flex-pack: center;
 }
 .service_item .item_icon_galanta img {
   margin-top: -35px;
@@ -1022,7 +1025,7 @@ nav ul li a.active {
     -webkit-box-align: center;
       -ms-flex-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;          
+      -ms-flex-pack: center;
 }
 .service_item .item_icon_online img {
   margin-top: -35px;
@@ -1071,7 +1074,7 @@ nav ul li a.active {
   height: 34px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -1148,7 +1151,7 @@ input:checked + .slider:before {
   margin-bottom: 10px;
 }
 .gmap_canvas {
-  position: relative; 
+  position: relative;
   max-width: 1125px;
   margin: auto;
 }
@@ -1238,7 +1241,7 @@ input[type="submit"]:hover {
   }
   .main_menu_list > li:not(:last-child) {
     margin: 0 10px 0 0;
-  }  
+  }
   .hero_section .heading_text {
     font-size: 42px;
     line-height: 54px;
@@ -1272,7 +1275,7 @@ input[type="submit"]:hover {
     line-height: 42px;
     margin-bottom: 10px;
   }
-  .section_heading.text-center .section_heading_description {    
+  .section_heading.text-center .section_heading_description {
     margin: auto;
     text-align: left;
   }
@@ -1346,7 +1349,7 @@ input[type="submit"]:hover {
 ====================== */
 @media screen and (max-width: 1199px) {
   .service_item {
-    font-size: 17px;    
+    font-size: 17px;
   }
   .main_menu_list > li > a {
     font-size: 15px;
@@ -1368,7 +1371,7 @@ input[type="submit"]:hover {
     padding: 30px;
   }
   .hero_section .hero_content_wrap {
-    padding-top: 220px;    
+    padding-top: 220px;
   }
   .hero_section_counter .counter_value {
     font-size: 30px;
@@ -1435,7 +1438,7 @@ input[type="submit"]:hover {
 
 /* Media Screen 1024px
 ====================== */
-@media screen and (max-width: 1024px) {  
+@media screen and (max-width: 1024px) {
   .contact_infobox_wrapper > [class*="-3"] {
     width: 33.333%;
   }
@@ -1464,7 +1467,7 @@ input[type="submit"]:hover {
   }
   .site_header.sticky {
     padding-top: 10px;
-    padding-bottom: 15px;  
+    padding-bottom: 15px;
   }
   .header_btns_group > li:first-child {
     display: inline-block;
@@ -1507,7 +1510,7 @@ input[type="submit"]:hover {
     font-size: 16px;
     line-height: 20px;
     padding: 12px 20px;
-  }  
+  }
   .hero_image_wrap {
     padding: 30px;
     margin-top: 20px;
@@ -1520,13 +1523,13 @@ input[type="submit"]:hover {
   }
   .site_footer {
     text-align: center;
-  }  
+  }
   .contact_infobox_wrapper > [class*="-3"] {
     width: 50%;
   }
   .page_title {
     font-size: 48px;
-  }  
+  }
   .site_footer_content .col-lg-3 {
     width: 19%;
   }
@@ -1534,7 +1537,7 @@ input[type="submit"]:hover {
     width: 56%;
   }
   .hero_section {
-    background-position: center bottom;    
+    background-position: center bottom;
   }
   .hero_section .hero_content_wrap {
     padding-top: 180px;
@@ -1757,7 +1760,7 @@ input[type="submit"]:hover {
     width: 70%;
     margin-left: 35px;
     margin-top: -42px;
-  }  
+  }
   .service_item .item_icon_parental img {
     width: 56%;
   }
@@ -1924,7 +1927,7 @@ input[type="submit"]:hover {
     max-width: 255px;
   }
   .gmap_canvas iframe {
-    height: 300px;    
+    height: 300px;
   }
   .contact_infobox_wrapper > [class*="-3"] {
     width: 100%;

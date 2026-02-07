@@ -16,7 +16,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Nevermind is a psychology clinic in Gothenburg. Our psychologists are experts in psychological flexibility. We use scientific methods and have a lot of experience. We know starting therapy can be hard, so we do our best to make it easy and comfortable for you. We'll be with you every step of the way. Come as you are." />
     <meta property="og:title" content="Nevermind Psykolog" />
-    <meta property="og:url" content="https://nevermindpsykolog.se" />
+    <meta property="og:url" content="https://nevermindpsykolog.se/en/" />
 
     <title>Nevermind Psykolog</title>
     <link rel="canonical" href="https://nevermindpsykolog.se/en/" />
@@ -67,7 +67,7 @@
                     </li>
                     <li>
                       <a class="nav-link" href="#service_section">Consultations</a>
-                    </li>                  
+                    </li>
                     <li>
                       <a class="nav-link" href="#contact_section">Contact</a>
                     </li>
@@ -97,7 +97,7 @@
                   <button class="mobile_menu_btn" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="far fa-bars"></i>
                   </button>
-                </li>              
+                </li>
               </ul>
             </div>
           </div>
@@ -110,6 +110,7 @@
             <div class="row align-items-center">
               <div class="col-lg-6">
                 <div class="hero_content_wrap">
+                  <h1 class="hero_title">Nevermind Psykolog</h1>
                   <p class="heading_description">
                     Nevermind is a psychology clinic in Gothenburg. Our psychologists are experts in psychological flexibility. We use scientific methods and have a lot of experience. We know starting therapy can be hard, so we do our best to make it easy and comfortable for you. We'll be with you every step of the way. Come as you are.
                   </p>
@@ -183,7 +184,7 @@
                       </p>
                       <p>
                         If you live in a small town or have trouble finding a nearby psychologist, online therapy is a great option. It's also helpful if you prefer talking to a psychologist you don't know personally. Online therapy is ideal if you or your partner find it challenging to visit a clinic for any reason.
-                      </p>  
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -191,7 +192,7 @@
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item" onclick="toggleContent(this,'.content_parental')">
                   <div class="item_icon_parental">
-                    <img src="../assets/images/icons/gato.png" 
+                    <img src="../assets/images/icons/gato.png"
                          alt="Parent Counseling - Nevermind Psykolog">
                   </div>
                   <div class="item_contact_parental">
@@ -207,7 +208,7 @@
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item" onclick="toggleContent(this,'.content')">
                   <div class="item_icon_students">
-                    <img src="../assets/images/icons/mesa.png" 
+                    <img src="../assets/images/icons/mesa.png"
                          alt="Student Support - Nevermind Psykolog">
                   </div>
                   <div class="item_contact_students">
@@ -222,7 +223,7 @@
                     </div>
                   </div>
                 </div>
-              </div> 
+              </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item" onclick="toggleContent(this,'.content')">
                   <div class="item_icon_galanta">
@@ -235,7 +236,7 @@
                       <p>
                         Learn skills that benefit you both in the boardroom and the bedroom. Our focus is on maintaining connections, avoiding loneliness and isolation. We address social isolation, which isn't necessarily physical or geographic. We emphasize the importance of letting people know they matter to you. But how do you do that? Here, we learn together!
                       </p>
-                      <p>  
+                      <p>
                         We practice courtesy training, active listening, validation, and supportive responses.
                       </p>
                       <p>
@@ -245,7 +246,7 @@
                         As psychologists, we know that the most important thing for a person is other people. We need meaningful relationships to thrive. Being skilled at creating and maintaining these relationships is a skill that can be developed, just like riding a bike or cooking.
                       </p>
                       <p>
-                        In this group, we practice creating meaningful relationships and making them last. 
+                        In this group, we practice creating meaningful relationships and making them last.
                       </p>
                     </div>
                   </div>
@@ -284,7 +285,7 @@
                     <ul class="info_list unordered_list_block">
                       <li>
                         <span class="info_text">
-                          <a href="https://maps.app.goo.gl/QUSLKjB1FQbrcJtW6" target="_blank">
+                          <a href="https://maps.app.goo.gl/QUSLKjB1FQbrcJtW6" target="_blank" rel="noopener noreferrer">
                           Skånegatan 29, Göteborg
                           </a>
                         </span>
@@ -319,7 +320,7 @@
               <form id="contact-form">
                 <label for="entry.2005620554" class="required">Name:</label>
                 <input type="text" id="entry.2005620554" name="entry.2005620554" required><br>
-    
+
                 <label for="entry.71231780" class="required">Surname:</label>
                 <input type="text" id="entry.71231780" name="entry.71231780" required><br>
 
@@ -328,15 +329,16 @@
 
                 <label for="entry.1166974658">Phone number:</label>
                 <input type="text" id="entry.1166974658" name="entry.1166974658"><br>
-    
+
                 <label for="entry.839337160" class="required">Message:</label>
                 <textarea id="entry.839337160" name="entry.839337160" required></textarea><br>
-     
+                <input type="text" id="hp" name="hp" style="display:none" tabindex="-1" autocomplete="off">
                 <input type="submit" value="Send">
+                <div id="contact-status" role="status" aria-live="polite" class="contact-status" style="display:none;"></div>
               </form>
             </div>
           </div>
-          <!-- 
+          <!--
           <div class="gmap_canvas">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.0659562671394!2d11.983393777280515!3d57.69834924048826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3764b8288d3%3A0x6c481727fda9c4d8!2sSk%C3%A5negatan%2029%2C%20412%2052%20G%C3%B6teborg!5e0!3m2!1ses!2sse!4v1709380232332!5m2!1ses!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
@@ -397,32 +399,38 @@
       document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
         const form = event.target;
+        const hp = document.getElementById('hp');
+        if (hp && hp.value) { /* honeypot filled -> probable bot */ return; }
         const data = new FormData(form);
         const email = document.getElementById('entry.1045781291').value;
-        const messageDiv = document.getElementById('entry.839337160');
+        const statusDiv = document.getElementById('contact-status');
 
         // Simple email validation regex pattern
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
         if (!emailPattern.test(email)) {
-            alert('Please enter a valid email address.');
-        } else {
-          fetch('https://docs.google.com/forms/d/e/1FAIpQLSeeJVinK58baJN12pTLHEu0s3yzeKv30Tb8V1KQUgFAPN21lw/formResponse', {
+            statusDiv.textContent = 'Please enter a valid email address.';
+            statusDiv.style.color = 'red';
+            statusDiv.style.display = 'block';
+            return;
+        }
+
+        fetch('https://docs.google.com/forms/d/e/1FAIpQLSeeJVinK58baJN12pTLHEu0s3yzeKv30Tb8V1KQUgFAPN21lw/formResponse', {
           method: 'POST',
           body: data,
           mode: 'no-cors'
-          }).then(response => {
-            messageDiv.textContent = 'Message sent successfully';
-            messageDiv.style.color = 'green';
-            messageDiv.style.display = 'block';
+          }).then(() => {
+            statusDiv.textContent = 'Message sent successfully';
+            statusDiv.style.color = 'green';
+            statusDiv.style.display = 'block';
             form.reset();
+            setTimeout(function(){ statusDiv.style.display = 'none'; statusDiv.textContent = ''; }, 6000);
           }).catch(error => {
-            messageDiv.textContent = 'Error sending message';
-            messageDiv.style.color = 'red';
-            messageDiv.style.display = 'block';
+            statusDiv.textContent = 'Failed to send message';
+            statusDiv.style.color = 'red';
+            statusDiv.style.display = 'block';
             console.error('Error:', error);
           });
-        }      
       });
     </script>
   </body>
