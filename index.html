@@ -395,7 +395,6 @@
         const form = event.target;
         const hp = document.getElementById('hp');
         if (hp && hp.value) { /* honeypot filled -> probable bot */ return; }
-        const data = new FormData(form);
         const email = document.getElementById('entry.1045781291').value;
         const statusDiv = document.getElementById('contact-status');
 
@@ -409,9 +408,17 @@
             return;
         }
 
+        // Build URL-encoded form data
+        const params = new URLSearchParams();
+        params.append('entry.2005620554', document.getElementById('entry.2005620554').value);
+        params.append('entry.71231780', document.getElementById('entry.71231780').value);
+        params.append('entry.1045781291', document.getElementById('entry.1045781291').value);
+        params.append('entry.1166974658', document.getElementById('entry.1166974658').value);
+        params.append('entry.839337160', document.getElementById('entry.839337160').value);
+
         fetch('https://docs.google.com/forms/d/e/1FAIpQLSfhCZNG1X0O07AN5Bd0nBig6dl-x0fBEH7Pfw3yosNKJal4nA/formResponse', {
           method: 'POST',
-          body: data,
+          body: params,
           mode: 'no-cors'
           }).then(() => {
             statusDiv.textContent = 'Meddelandet sänt med framgång';
