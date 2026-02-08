@@ -386,6 +386,7 @@
 
         const email = document.getElementById('entry.1045781291').value;
         const statusDiv = document.getElementById('contact-status');
+        const messageTextarea = document.getElementById('entry.839337160');
 
         // Simple email validation regex pattern
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -421,11 +422,25 @@
             }
           });
 
-          statusDiv.textContent = 'Meddelandet sänt med framgång';
-          statusDiv.style.color = 'green';
-          statusDiv.style.display = 'block';
-          form.reset();
-          setTimeout(function(){ statusDiv.style.display = 'none'; statusDiv.textContent = ''; }, 6000);
+          // Show success message in the message textarea
+          messageTextarea.value = 'Meddelandet sänt med framgång';
+          messageTextarea.style.color = 'green';
+          messageTextarea.style.fontWeight = 'bold';
+          messageTextarea.readOnly = true;
+
+          // Reset other form fields but keep the success message
+          document.getElementById('entry.2005620554').value = '';
+          document.getElementById('entry.71231780').value = '';
+          document.getElementById('entry.1045781291').value = '';
+          document.getElementById('entry.1166974658').value = '';
+          document.getElementById('entry.1065046570').value = '';
+
+          setTimeout(function(){
+            messageTextarea.value = '';
+            messageTextarea.style.color = '';
+            messageTextarea.style.fontWeight = '';
+            messageTextarea.readOnly = false;
+          }, 6000);
         } catch (error) {
           statusDiv.textContent = 'Det gick inte att skicka meddelandet';
           statusDiv.style.color = 'red';
