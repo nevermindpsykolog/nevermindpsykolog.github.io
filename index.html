@@ -410,8 +410,10 @@
 
         // Build URL-encoded form data
         const params = new URLSearchParams();
-        params.append('entry.2005620554', document.getElementById('entry.2005620554').value);
-        params.append('entry.71231780', document.getElementById('entry.71231780').value);
+        const firstName = document.getElementById('entry.2005620554').value;
+        const lastName = document.getElementById('entry.71231780').value;
+        const fullName = firstName + ' ' + lastName;
+        params.append('entry.2005620554', fullName);
         params.append('entry.1045781291', document.getElementById('entry.1045781291').value);
         params.append('entry.1166974658', document.getElementById('entry.1166974658').value);
         params.append('entry.839337160', document.getElementById('entry.839337160').value);
