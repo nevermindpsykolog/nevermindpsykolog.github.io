@@ -291,24 +291,6 @@
                   </div>
                 </div>
               </div>
-              <!--
-              <div class="contact_infobox_wrapper row justify-content-center">
-              <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="contact_info_box">
-                  <div class="item_icon">
-                    <i class="fa-solid fa-phone"></i>
-                  </div>
-                  <div class="item_contact">
-                    <h3 class="item_title">Phone</h3>
-                    <ul class="info_list unordered_list_block">
-                      <li>
-                        <span class="info_text">TBA</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              -->
             </div>
           </div>
           <div class="section_contact_form_text text-center">
@@ -328,9 +310,15 @@
                 <label for="entry.1166974658">Telefon:</label>
                 <input type="text" id="entry.1166974658" name="entry.1166974658"><br>
 
+                <label for="entry.1065046570" class="required">Adress:</label>
+                <input type="text" id="entry.1065046570" name="entry.1065046570" required><br>
+
                 <label for="entry.839337160" class="required">Meddelande:</label>
                 <textarea id="entry.839337160" name="entry.839337160" required></textarea><br>
                 <input type="text" id="hp" name="hp" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="pageHistory" value="0">
+                <input type="hidden" name="fbzx" value="401436159204244803">
                 <input type="submit" value="Skicka">
                 <div id="contact-status" role="status" aria-live="polite" class="contact-status" style="display:none;"></div>
               </form>
@@ -390,11 +378,12 @@
     <script src="assets/js/toggleContent.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
+      document.getElementById('contact-form').addEventListener('submit', async function(event) {
         event.preventDefault();
         const form = event.target;
         const hp = document.getElementById('hp');
         if (hp && hp.value) { /* honeypot filled -> probable bot */ return; }
+
         const email = document.getElementById('entry.1045781291').value;
         const statusDiv = document.getElementById('contact-status');
 
@@ -416,24 +405,33 @@
         params.append('entry.2005620554', fullName);
         params.append('entry.1045781291', document.getElementById('entry.1045781291').value);
         params.append('entry.1166974658', document.getElementById('entry.1166974658').value);
+        params.append('entry.1065046570', document.getElementById('entry.1065046570').value);
         params.append('entry.839337160', document.getElementById('entry.839337160').value);
+        params.append('fvv', '1');
+        params.append('pageHistory', '0');
+        params.append('fbzx', '401436159204244803');
 
-        fetch('https://docs.google.com/forms/d/e/1FAIpQLSfhCZNG1X0O07AN5Bd0nBig6dl-x0fBEH7Pfw3yosNKJal4nA/formResponse', {
-          method: 'POST',
-          body: params,
-          mode: 'no-cors'
-          }).then(() => {
-            statusDiv.textContent = 'Meddelandet sänt med framgång';
-            statusDiv.style.color = 'green';
-            statusDiv.style.display = 'block';
-            form.reset();
-            setTimeout(function(){ statusDiv.style.display = 'none'; statusDiv.textContent = ''; }, 6000);
-          }).catch(error => {
-            statusDiv.textContent = 'Det gick inte att skicka meddelandet';
-            statusDiv.style.color = 'red';
-            statusDiv.style.display = 'block';
-            console.error('Error:', error);
+        try {
+          const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfhCZNG1X0O07AN5Bd0nBig6dl-x0fBEH7Pfw3yosNKJal4nA/formResponse', {
+            method: 'POST',
+            body: params,
+            mode: 'no-cors',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            }
           });
+
+          statusDiv.textContent = 'Meddelandet sänt med framgång';
+          statusDiv.style.color = 'green';
+          statusDiv.style.display = 'block';
+          form.reset();
+          setTimeout(function(){ statusDiv.style.display = 'none'; statusDiv.textContent = ''; }, 6000);
+        } catch (error) {
+          statusDiv.textContent = 'Det gick inte att skicka meddelandet';
+          statusDiv.style.color = 'red';
+          statusDiv.style.display = 'block';
+          console.error('Error:', error);
+        }
       });
     </script>
   </body>

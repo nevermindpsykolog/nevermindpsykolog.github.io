@@ -108,6 +108,9 @@ img {
 .contact-status {
   margin-top: 12px;
   font-weight: 600;
+  clear: both;
+  text-align: center;
+  width: 100%;
 }
 
 a {
@@ -779,7 +782,7 @@ nav ul li a.active {
   background-size: contain;
   background-repeat: no-repeat !important;
   background-position: right bottom;
-  //for browser compatibility
+  /* for browser compatibility */
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
